@@ -8,13 +8,15 @@
   font-family: 'Montserrat', sans-serif;
 }
 body{
-    background: linear-gradient(120deg, #45ade9, #bc5ee4);
+  background-image: url(tutorsignup.jpg);
+  background-position: center;
+  background-size: cover;
   padding: 0 10px;
 }
 .wrapper{
   max-width: 750px;
   width: 100%;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.753);
   margin: 20px auto;
   box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
   padding: 30px;
@@ -25,7 +27,7 @@ body{
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 25px;
-  color: #45ade9;
+  color: #12514be6;
   text-transform: uppercase;
   text-align: center;
 }
@@ -38,7 +40,7 @@ body{
 
 .wrapper .form .inputfield label{
    width: 200px;
-   color: #757575;
+   color: #000000;
    margin-right: 10px;
   font-size: 14px;
 }
@@ -47,11 +49,12 @@ body{
 .wrapper .form .inputfield .textarea{
   width: 100%;
   outline: none;
-  border: 1px solid #d5dbd9;
+  border: 1px solid #c3c4c4;
   font-size: 15px;
   padding: 8px 10px;
   border-radius: 3px;
   transition: all 0.3s ease;
+  background: #f0f0f0ca;
 }
 
 .wrapper .form .inputfield .textarea{
@@ -64,6 +67,7 @@ body{
   position: relative;
   width: 100%;
   height: 37px;
+  opacity: 70%;
 }
 
 .wrapper .form .inputfield .custom_select:before{
@@ -72,7 +76,7 @@ body{
   top: 13px;
   right: 10px;
   border: 8px solid;
-  border-color: #d5dbd9 transparent transparent transparent;
+  border-color: #393838ca transparent transparent transparent;
   pointer-events: none;
 }
 
@@ -86,7 +90,7 @@ body{
   border: 0px;
   padding: 8px 10px;
   font-size: 15px;
-  border: 1px solid #d5dbd9;
+  border: 1px solid #f0f0f0ca;
   border-radius: 3px;
 }
 
@@ -95,15 +99,15 @@ body{
    padding: 8px 10px;
   font-size: 15px; 
   border: 0px;
-  background:  #45ade9;
-  color: #fff;
+  background:  #12514be6;
+  color: rgb(255, 255, 255);
   cursor: pointer;
   border-radius: 3px;
   outline: none;
 }
 
 .wrapper .form .inputfield .btn:hover{
-  background: #81c8f2;
+  background: #29a99ce6;
 }
 
 .required:before {
@@ -112,7 +116,7 @@ body{
 }
 
 .radiobutton {
-   color: #757575;
+  color: #000000;
   font-size: 14px;
   display: inline-flex;
 }
@@ -126,20 +130,6 @@ body{
   margin-bottom: 15px;
   margin-right: 5px;
   
-}
-
-.subjects {
-  color: #757575;
-  font-size: 14px;
-  width: 100%;
-}
-
-.subjects .required {
-  margin-right: 101px;
-}
-
-.subjects input[type = "checkbox"]{
-  margin-bottom: 20px;
 }
 
 p {
@@ -195,7 +185,7 @@ input[type = "file"]{
 }
 
 .education {
-  color: #757575;
+  color: #000000;
   font-size: 14px;
   display: inline-flex;
   margin-bottom: 23px;
@@ -214,4 +204,29 @@ input[type = "file"]{
 
 .education label[for = "postgrad"]{
   margin-left: 5px;
+}
+
+.login_link
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 585px;
+}
+
+.login_link a
+{
+  margin-left: 5px;
+    position: absolute;
+    color: #2691d9;
+    text-decoration: none;
+}
+
+.login_link a:hover
+{
+    text-decoration: underline;
 }

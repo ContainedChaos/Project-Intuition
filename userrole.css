@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+  body{
+    background-image: url(userrole_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 0 10px;
+  }
+  .wrapper{
+    max-width: 400px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.695);
+    margin: 200px auto;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+    padding: 35px;
+    border-radius: 30px;
+  }
+  .wrapper .title{
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: #12514be6;
+    text-align: center;
+  }
+  .wrapper .content{
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #010e0ce6;
+    text-align: center;
+  }
+  button{
+    width: 120px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #0d877b;
+    background: #0d877b;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-left: 28px;
+  }
+  button:hover span{
+    width: 100%;
+  }
+  button:hover{
+    border: 100%;
+    background-color: #46b1a6;
+    transition: 0.15s;
+  }
+  button a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  .title h1{
+    border-bottom: 1px solid rgb(124, 124, 124);
+    padding: 0 0 20px 0;
+  }
