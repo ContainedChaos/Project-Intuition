@@ -7,8 +7,16 @@
 </head>
 <body>
   //git
-  //uhi
+<<<<<<< HEAD
 
+  //yrdy
+=======
+  //uhi
+<<<<<<< HEAD
+
+=======
+>>>>>>> 65ed7ddc9b0a05711e555beb2cd1c6fbf003a576
+>>>>>>> fe64baec67ce8451f73fc05e31bd6fd256204d3d
 <div class="wrapper">
     <div class="title">
       Student Signup
