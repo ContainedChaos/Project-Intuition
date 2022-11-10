@@ -7,23 +7,13 @@
 </head>
 <body>
 
-  //yrdy
-  //uhi
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 65ed7ddc9b0a05711e555beb2cd1c6fbf003a576
->>>>>>> fe64baec67ce8451f73fc05e31bd6fd256204d3d
->>>>>>> 7509400e33c627ab8727dfae19e09fc6a3fd93f5
 <div class="wrapper">
     <div class="title">
       Student Signup
     </div>
 <form action = "studentpreferencescode.php" method = "POST">
     <div class="form">
-//jhjhg
+
 
        <div class="radiobutton">
         <label class = "required">Preferred Mode</label>
@@ -32,7 +22,7 @@
         <input type="radio" id="off" name="mode" value="f" required>
         <label for="off">Offline</label><br>
        </div> 
-//new
+
        <div class="inputfield">
         <label class = "required">Preferred Area</label>
         <input type="text" class="input" name = "area" required>
