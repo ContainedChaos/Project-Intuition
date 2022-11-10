@@ -8,6 +8,7 @@
 <body>
   //git
   //uhi
+
 <div class="wrapper">
     <div class="title">
       Student Signup
@@ -23,7 +24,7 @@
         <input type="radio" id="off" name="mode" value="f" required>
         <label for="off">Offline</label><br>
        </div> 
-
+//new
        <div class="inputfield">
         <label class = "required">Preferred Area</label>
         <input type="text" class="input" name = "area" required>
