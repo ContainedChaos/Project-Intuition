@@ -103,7 +103,7 @@
 
         if($INSERT && sendMail($email,$vkey))
         {
-          header("Location: signup-verify.html");
+          header("Location: studentpreferences.php?email=$email");
         }
 
         $conn->close();
