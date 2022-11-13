@@ -98,6 +98,10 @@
           exit('Password must be between 8 and 15 characters long, contain uppercase, lowercase letters and a number!');
         }
 
+        if (strlen($_POST['phone']) != 11 || !preg_match("/[0-9]/", $_POST['phone'])) {
+          exit('Phone number not valid!');
+        }
+
         mysqli_query($conn, $INSERT);
 
         if($INSERT && sendMail($email,$vkey))
