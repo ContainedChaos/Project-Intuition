@@ -11,9 +11,6 @@
   $grade = $_POST['grade'];
   $version = $_POST['version'];
   $institution = $_POST['institution'];
-  $mode = $_POST['mode'];
-  $area = $_POST['area'];
-  $salaryrange = $_POST['salaryrange'];
   $phone = $_POST['phone'];
   $email = $_POST['email'];
   $password = $_POST['password'];
@@ -53,7 +50,7 @@
   }
 
 
-  if(!empty($name) && !empty($gender) && !empty($grade) && !empty($version) && !empty($mode) && !empty($area) && !empty($email) && !empty($password) && !empty($confirm))
+  if(!empty($name) && !empty($gender) && !empty($grade) && !empty($version) && !empty($email) && !empty($password) && !empty($confirm))
   {
     if($password == $confirm)
     {
