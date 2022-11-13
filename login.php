@@ -20,15 +20,15 @@ $password = $_POST['password'];
 
 if (isset($email) && isset($password)) {
 
-		$sql = "SELECT * FROM student WHERE email = '$email' AND password = '$password'";
-        $sql2 = "SELECT * FROM tutor WHERE email ='$email' AND password='$password'";
+		$sql = "SELECT * FROM student WHERE email = '$email'";
+        $sql2 = "SELECT * FROM tutor WHERE email ='$email'";
 		
         $result = mysqli_query($conn, $sql);
         $result2 = mysqli_query($conn, $sql2);
 
 		if ($result->num_rows == 1) {
 			$row = mysqli_fetch_assoc($result);
-            if ($row['verified'] == 1) {
+            if ($row['verified'] == 1 && password_verify($password, $row['password'])) {
 							$_SESSION['email'] = $row['email'];
             	$_SESSION['password'] = $row['password'];
 					    $_SESSION['name'] = $row['name'];
@@ -82,7 +82,7 @@ if (isset($email) && isset($password)) {
 	
     else if ($result2->num_rows == 1) {
 			$row = mysqli_fetch_assoc($result2);
-            if ($row['verified'] == 1) {
+            if ($row['verified'] == 1 && password_verify($password, $row['password'])) {
 							$_SESSION['email'] = $row['email'];
 							$_SESSION['password'] = $row['password'];
             	$_SESSION['name'] = $row['name'];

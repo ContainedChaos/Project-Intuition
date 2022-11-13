@@ -11,10 +11,6 @@ use PHPMailer\PHPMailer\Exception;
   $education = $_POST['education'];
   $version = $_POST['version'];
   $institution = $_POST['institution'];
-  $mode = $_POST['mode'];
-  $area = $_POST['area'];
-  $slots = $_POST['slots'];
-  $salaryrange = $_POST['salaryrange'];
   $phone = $_POST['phone'];
   $email = $_POST['email'];
   $password = $_POST['password'];
@@ -55,7 +51,7 @@ use PHPMailer\PHPMailer\Exception;
   }
 
 
-  if (!empty($name) && !empty($gender) && !empty($education) && !empty($version) && !empty($mode) && !empty($area) && !empty($slots) && !empty($email) && !empty($password) && !empty($confirm))
+  if (!empty($name) && !empty($gender) && !empty($education) && !empty($version) && !empty($email) && !empty($password) && !empty($confirm))
   {
     if($password == $confirm)
     {
@@ -71,6 +67,8 @@ use PHPMailer\PHPMailer\Exception;
       {
         die('Connect Error('. mysqli_connect_errno().')'. mysqli_connect_error());
       }
+
+      $hash = password_hash($password, PASSWORD_DEFAULT);
 
       $exist = "SELECT * FROM student WHERE email = '$email'";
       $exist2 = "SELECT * FROM tutor WHERE email = '$email'";
@@ -89,7 +87,7 @@ use PHPMailer\PHPMailer\Exception;
 
       else
       {
-        $INSERT= "INSERT Into tutor (name, gender, age, address, education, version, institution, mode, area, slots, salaryrange, phone, email, password, vkey, verified) values ('$name', '$gender', '$age', '$address', '$education', '$version', '$institution', '$mode', '$area', '$slots', '$salaryrange', '$phone', '$email', '$password', '$vkey', 0)";
+        $INSERT= "INSERT Into tutor (name, gender, age, address, education, version, institution, phone, email, password, vkey, verified) values ('$name', '$gender', '$age', '$address', '$education', '$version', '$institution', '$phone', '$email', '$hash', '$vkey', 0)";
 
         if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
           exit('Email is not valid!');
@@ -103,7 +101,7 @@ use PHPMailer\PHPMailer\Exception;
 
         if($INSERT && sendMail($email,$vkey))
         {
-          header("Location: signup-verify.html");
+          header("Location: tutorpreferences.php?email=$email");
         }
 
         $conn->close();

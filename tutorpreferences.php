@@ -9,9 +9,9 @@
 
 <div class="wrapper">
     <div class="title">
-      Student Signup
+      Tutor Signup
     </div>
-<form action = "studentpreferencescode.php" method = "POST">
+<form action = "tutorpreferencescode.php" method = "POST">
     <div class="form">
 
 
@@ -27,6 +27,11 @@
         <label class = "required">Preferred Area</label>
         <input type="text" class="input" name = "area" required>
        </div>
+
+       <div class="inputfield">
+        <label class = "required">Slots</label>
+        <input type="text" class="input" name = "slots" required>
+      </div>
 
        <div class="inputfield">
         <label>Salary Range</label>
@@ -58,5 +63,3 @@
 	
 </body>
 </html>
-
-

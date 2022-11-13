@@ -69,6 +69,8 @@
         die('Connect Error('. mysqli_connect_errno().')'. mysqli_connect_error());
       }
 
+      $hash = password_hash($password, PASSWORD_DEFAULT);
+
       $exist = "SELECT * FROM student WHERE email = '$email'";
       $exist2 = "SELECT * FROM tutor WHERE email = '$email'";
 
@@ -86,7 +88,7 @@
 
       else
       {
-        $INSERT= "INSERT Into student (name, gender, age, address, grade, version, institution, mode, area, salaryrange, phone, email, password, vkey, verified) values ('$name', '$gender', '$age', '$address', '$grade', '$version', '$institution', '$mode', '$area', '$salaryrange', '$phone', '$email', '$password', '$vkey', 0)";
+        $INSERT= "INSERT Into student (name, gender, age, address, grade, version, institution, phone, email, password, vkey, verified) values ('$name', '$gender', '$age', '$address', '$grade', '$version', '$institution', '$phone', '$email', '$hash', '$vkey', 0)";
 
         if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
           exit('Email is not valid!');
