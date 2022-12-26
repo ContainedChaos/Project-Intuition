@@ -1,0 +1,79 @@
+<html lang = "en" dir = "ltr">
+    <head>
+        <meta charset = "utf-8">
+        <title>Search filters</title>
+        <link rel = "stylesheet" href = "searchfilters.css">
+    </head>
+    <body>
+        <div class = "banner">
+            <div class = "navbar">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Search</a></li>
+                  <li><a href="#">My Profile</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class = "wrapper">
+        <div class = "title">
+            <h1>Search</h1>
+        </div>
+        <form action = "searchfiltersstudent.php" method = "POST">
+        <div class = "content">
+          <div class="radiobutton">
+            <label class = "required">Gender</label>
+            <input type="radio" id="male" name="gender" value="m" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="f" required>
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="o" required>
+            <label for="other">Other</label>
+          </div> 
+
+          <div class="radiobutton">
+            <label class = "required">Version</label>
+            <input type="radio" id="ev" name="version" value="v" required>
+            <label for="ev">English Version</label><br>
+            <input type="radio" id="em" name="version" value="e" required>
+            <label for="em">English Medium</label><br>
+            <input type="radio" id="bm" name="version" value="b" required>
+            <label for="bm">Bangla Medium</label>
+          </div>  
+
+
+          <div class="radiobutton">
+            <label class = "required">Mode</label>
+            <input type="radio" id="on" name="mode" value="n" required>
+            <label for="on">Online</label><br>
+            <input type="radio" id="off" name="mode" value="f" required>
+            <label for="off">Offline</label><br>
+          </div> 
+
+          <div class="inputfield">
+            <label class = "required">Area</label>
+            <input type="text" class="input" name = "area" required>
+          </div>
+    
+          <div class="inputfield">
+            <label>Salary Range</label>
+              <select name = "salaryrange">
+                <option selected hidden value="">--Select--</option>
+                <option value="threetofive">3000 to 5000</option>
+                <option value="fivetoeight">5000 to 8000</option>
+                <option value="eighttoten">8000 to 10000</option>
+                <option value="tentofifteen">10000 to 15000</option>
+                <option value="fifteentotwenty">15000 to 20000</option>
+              </select>
+          </div> 
+        </div>
+
+        <div class="inputfield">
+            <input type="submit" value="Apply" class="btn" name = "apply">
+           </div>
+        </form>
+        </div>
+    </body>
+</html>
