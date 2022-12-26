@@ -16,7 +16,7 @@
         $email = $_POST['email'];
         $phone = $_POST['updatePhone'];
         $education = $_POST['updateEducation'];
-        $version = $_POST['updateversion'];
+        $version = $_POST['updateVersion'];
     
         $query = "SELECT * from tutor where email = '$email'";
     

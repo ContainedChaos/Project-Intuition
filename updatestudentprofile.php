@@ -39,19 +39,14 @@
                         <input type = "text" name = "updatePhone" class = "form-control" value = "<?php echo $row['phone']; ?>">
                     </div>
                     <div class="txt_field">
-                        <label class = "required">Education</label>
-                        <input type="radio" id="college" name="updateEducation" value="c" required checked = "checked">
-                        <label for="college">College</label><br>
-                        <input type="radio" id="undergrad" name="updateEducation" value="u" required>
-                        <label for="undergrad">Undergrad</label><br>
-                        <input type="radio" id="postgrad" name="updateEducation" value="p" required>
-                        <label for="postgrad">Postgrad</label>
-                    </div>
+                        <label>Grade</label>
+                        <input type="text" class="form-control" name = "updateGrade" value = "<?php echo $row['grade']; ?>">
+                    </div> 
                     <div class="txt_field">
                         <label class = "required">Version</label>
                         <input type="radio" id="ev" name="updateVersion" value="v" required checked = "checked">
                         <label for="ev">English Version</label><br>
-                        <input type="radio" id="em" name=updateVersion" value="e" required>
+                        <input type="radio" id="em" name="updateVersion" value="e" required>
                         <label for="em">English Medium</label><br>
                         <input type="radio" id="bm" name="updateVersion" value="b" required>
                         <label for="bm">Bangla Medium</label>

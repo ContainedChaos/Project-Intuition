@@ -8,13 +8,13 @@
 
     session_start();
     $currentemail = $_SESSION['email'];
-    $sql = "SELECT * FROM tutor WHERE email = '$currentemail'";
+    $sql = "SELECT * FROM student WHERE email = '$currentemail'";
     $result = mysqli_query($conn, $sql);
 
     $row = mysqli_fetch_assoc($result);  
     $currentid = $row['id'];  
 
-    $sql2 = "SELECT * from tutorpreferences WHERE id = $currentid";
+    $sql2 = "SELECT * from studentpreferences WHERE id = $currentid";
     $gotResults = mysqli_query($conn, $sql2);
 
     if($gotResults)
@@ -26,7 +26,7 @@
                 //print_r($row);
                 ?>
                 <div class = "center">
-                <form method = "post" action = "updatetutorprefcode.php">
+                <form method = "post" action = "updatestudentprefcode.php">
 
                     <div class="radiobutton">
                         <label class = "required">Preferred Mode</label>
@@ -38,10 +38,6 @@
                     <div class = "txt_field">
                         <label>Area</label>
                         <input type = "text" name = "updateArea" class = "form-control" value = "<?php echo $row['area']; ?>">
-                    </div>
-                    <div class = "txt_field">
-                        <label>Slots</label>
-                        <input type = "text" name = "updateSlots" class = "form-control" value = "<?php echo $row['slots']; ?>">
                     </div>
                     <div class="inputfield">
                         <label>Salary Range</label>
