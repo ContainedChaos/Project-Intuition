@@ -26,7 +26,7 @@
               <ul>
                   <li><a href="loggedinstudent.php">Home</a></li>
                   <li><a href="#">Dashboard</a></li>
-                  <li><a href="#">Search</a></li>
+                  <li><a href="searchfiltersstudent.html">Search</a></li>
                   <li><a href="#">My Profile</a></li>
                   <li><a href="#">Contact Us</a></li>
               </ul>

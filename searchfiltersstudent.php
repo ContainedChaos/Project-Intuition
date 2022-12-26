@@ -33,6 +33,9 @@
                   <li><a href="studentprofile.php">My Profile</a></li>
                   <li><a href="#">Contact Us</a></li>
                 </ul>
+                <button>
+                  <a href = "homepage.html">Logout</a>
+                </button>
             </div>
         </div>
 
