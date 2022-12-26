@@ -130,5 +130,9 @@
           </div>
           </div>
       </div>
+      <div class="content">
+            <button type = "button"><a href = "updatetutorprofile.php"><span></span>Update Profile</a></button>
+            <button type = "button"><a href = "updatetutorpref.php"><span></span>Update Preferences</a></button>
+      </div>
   </body>
 </html>
