@@ -27,7 +27,7 @@
         <div class = "banner">
             <div class = "navbar">
                 <ul>
-                  <li><a href="#">Home</a></li>
+                  <li><a href="loggedintutor.php">Home</a></li>
                   <li><a href="#">Dashboard</a></li>
                   <li><a href="#">Search</a></li>
                   <li><a href="tutorprofile.php">My Profile</a></li>

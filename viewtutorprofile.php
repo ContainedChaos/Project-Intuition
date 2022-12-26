@@ -26,7 +26,7 @@
       <title>
         Project Intuition
       </title>
-      <link rel = "stylesheet" href = "studentprofile.css">
+      <link rel = "stylesheet" href = "tutorprofile.css">
   </head>
   <body>
       <div class = "banner">

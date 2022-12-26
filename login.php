@@ -20,8 +20,8 @@ $password = $_POST['password'];
 
 if (isset($email) && isset($password)) {
 
-		$sql = "SELECT * FROM student WHERE email = '$email'";
-        $sql2 = "SELECT * FROM tutor WHERE email ='$email'";
+		$sql = "SELECT * FROM student natural join studentpreferences WHERE email = '$email'";
+        $sql2 = "SELECT * FROM tutor natural join tutorpreferences WHERE email ='$email'";
 		
         $result = mysqli_query($conn, $sql);
         $result2 = mysqli_query($conn, $sql2);

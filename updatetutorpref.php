@@ -11,10 +11,8 @@
     $sql = "SELECT * FROM tutor WHERE email = '$currentemail'";
     $result = mysqli_query($conn, $sql);
 
-    while($row = $result->fetch_assoc())
-    {
-        $currentid = $row['id'];
-    }
+    $row = $result->fetch_assoc();
+    $currentid = $row['id'];
 
     $sql2 = "SELECT * from tutorpreferences WHERE id = $currentid";
     $gotResults = mysqli_query($conn, $sql2);

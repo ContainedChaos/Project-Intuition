@@ -30,7 +30,7 @@
                   <li><a href="#">Home</a></li>
                   <li><a href="#">Dashboard</a></li>
                   <li><a href="#">Search</a></li>
-                  <li><a href="tutorprofile.php">My Profile</a></li>
+                  <li><a href="studentprofile.php">My Profile</a></li>
                   <li><a href="#">Contact Us</a></li>
                 </ul>
             </div>
@@ -56,7 +56,7 @@
                 $education = $row['education'];
         
                 echo "<tr>";
-                echo "<td> <a href = \"viewprofile.php?email=$email\"> {$name} </a> </td>";
+                echo "<td> <a href = \"viewtutorprofile.php?email=$email\"> {$name} </a> </td>";
                 echo "<td> {$email} </td>";
                 echo "<td> {$institution} </td>";
                 echo "<td> {$education} </td>";

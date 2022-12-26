@@ -12,7 +12,7 @@
                 <ul>
                   <li><a href="#">Home</a></li>
                   <li><a href="#">Dashboard</a></li>
-                  <li><a href="searchfilters.html">Search</a></li>
+                  <li><a href="searchfiltersstudent.html">Search</a></li>
                   <li><a href="studentprofile.php">My Profile</a></li>
                   <li><a href="#">Contact Us</a></li>
                 </ul>
