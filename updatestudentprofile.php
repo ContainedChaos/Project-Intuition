@@ -8,7 +8,7 @@
 
     session_start();
     $currentuser = $_SESSION['email'];
-    $sql = "SELECT * FROM tutor WHERE email = '$currentuser'";
+    $sql = "SELECT * FROM student WHERE email = '$currentuser'";
     $gotResults = mysqli_query($conn, $sql);
 
     if($gotResults)
@@ -20,7 +20,7 @@
                 //print_r($row);
                 ?>
                 <div class = "center">
-                <form method = "post" action = "updatetutorprofilecode.php">
+                <form method = "post" action = "updatestudentprofilecode.php">
 
                     <div class = "txt_field">
                         <label>Name</label>

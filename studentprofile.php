@@ -124,8 +124,8 @@
           </div>
       </div>
       <div class="content">
-            <button type = "button"><a href = "tutorsignup.html"><span></span>Update Profile</a></button>
-            <button type = "button"><a href = "tutorsignup.html"><span></span>Update Preferences</a></button>
+            <button type = "button"><a href = "updatestudentprofile.php"><span></span>Update Profile</a></button>
+            <button type = "button"><a href = "updatestudentpref.php"><span></span>Update Preferences</a></button>
       </div>
   </body>
 </html>

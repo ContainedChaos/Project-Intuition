@@ -18,13 +18,13 @@
         $education = $_POST['updateEducation'];
         $version = $_POST['updateversion'];
     
-        $query = "SELECT * from tutor where email = '$email'";
+        $query = "SELECT * from student where email = '$email'";
     
         $qres = mysqli_query($conn, $query);
     
         if ($qres->num_rows == 1)
         {
-                $update = "UPDATE tutor SET name = '$name', address = '$address', institution = '$institution', phone = '$phone', version = '$version', education = '$education' where email = '$email'";
+                $update = "UPDATE student SET name = '$name', address = '$address', institution = '$institution', phone = '$phone', version = '$version', education = '$education' where email = '$email'";
                 //$update2 = "UPDATE tutor SET password = '$password' where email = '$email' && vkey = '$vkey'";
     
                 $result = mysqli_query($conn, $update);
@@ -39,15 +39,10 @@
 
                 if ($result)
                 {
-                    header("Location: tutorprofile.php");
+                    header("Location: studentprofile.php");
                 }
 
                 
 
         }
     }
-    
-
-
-
-?>
