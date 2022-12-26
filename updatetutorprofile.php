@@ -51,7 +51,7 @@
                         <label class = "required">Version</label>
                         <input type="radio" id="ev" name="updateVersion" value="v" required checked = "checked">
                         <label for="ev">English Version</label><br>
-                        <input type="radio" id="em" name=updateVersion" value="e" required>
+                        <input type="radio" id="em" name="updateVersion" value="e" required>
                         <label for="em">English Medium</label><br>
                         <input type="radio" id="bm" name="updateVersion" value="b" required>
                         <label for="bm">Bangla Medium</label>
