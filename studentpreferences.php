@@ -43,7 +43,7 @@
        </div> 
 
        <div class="inputfield">
-        <input type = "submit" name = "Update" value = "update">
+        <input type = "submit" name = "Submit" value = "Submit">
         <button type = "button"><a href = "signup-verify.html"><span></span>Skip</a></button>
         <input type = "hidden" name = "email" value = "<?php if (isset($_GET['email'])){echo $_GET['email'];} ?>">
        </div>

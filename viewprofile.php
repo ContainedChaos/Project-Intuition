@@ -14,7 +14,7 @@
     echo "Connection failed!";
   }
   else{
-    $query = "SELECT * From tutor Where email = '$email'";
+    $query = "SELECT * From tutor natural join tutorpreferences Where email = '$email'";
     $result = mysqli_query($conn, $query);
     $row = mysqli_fetch_array($result);
   }

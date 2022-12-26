@@ -36,7 +36,7 @@ if(isset($_POST['email']))
         {
             $query2 = "INSERT INTO studentpreferences (id, mode, area, salaryrange) values ('$id', '$mode', '$area', '$salaryrange')";
             if (mysqli_query($conn, $query2)){
-                header("Location: login.html");
+                header("Location: signup-verify.html");
             }
             else{
                 echo "Error 1";
