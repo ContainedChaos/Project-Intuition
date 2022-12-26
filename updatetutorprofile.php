@@ -9,7 +9,7 @@
     session_start();
     $currentuser = $_SESSION['email'];
     $sql = "SELECT * FROM tutor WHERE email = '$currentuser'";
-
+    $sql2 = "SELECT education FROM tutor WHERE email = '$currentuser'";
     $gotResults = mysqli_query($conn, $sql);
 
     if($gotResults)
@@ -41,17 +41,16 @@
                     </div>
                     <div class="txt_field">
                         <label class = "required">Education</label>
-                        <input type="radio" id="college" name="updateEducation" value="c" required>
+                        <input type="radio" id="college" name="updateEducation" value="c" required checked = "checked">
                         <label for="college">College</label><br>
                         <input type="radio" id="undergrad" name="updateEducation" value="u" required>
                         <label for="undergrad">Undergrad</label><br>
                         <input type="radio" id="postgrad" name="updateEducation" value="p" required>
                         <label for="postgrad">Postgrad</label>
-                    </div> 
-
+                    </div>
                     <div class="txt_field">
                         <label class = "required">Version</label>
-                        <input type="radio" id="ev" name="version" value="v" required>
+                        <input type="radio" id="ev" name="version" value="v" required checked = "checked">
                         <label for="ev">English Version</label><br>
                         <input type="radio" id="em" name="version" value="e" required>
                         <label for="em">English Medium</label><br>
