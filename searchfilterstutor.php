@@ -30,7 +30,7 @@
                   <li><a href="#">Home</a></li>
                   <li><a href="#">Dashboard</a></li>
                   <li><a href="#">Search</a></li>
-                  <li><a href="studentprofile.php">My Profile</a></li>
+                  <li><a href="tutorprofile.php">My Profile</a></li>
                   <li><a href="#">Contact Us</a></li>
                 </ul>
             </div>
@@ -53,13 +53,13 @@
                 $name = $row['name'];
                 $email = $row['email'];
                 $institution = $row['institution'];
-                $education = $row['education'];
+                $grade = $row['grade'];
         
                 echo "<tr>";
-                echo "<td> <a href = \"viewprofile.php?email=$email\"> {$name} </a> </td>";
+                echo "<td> <a href = \"viewstudentprofile.php?email=$email\"> {$name} </a> </td>";
                 echo "<td> {$email} </td>";
                 echo "<td> {$institution} </td>";
-                echo "<td> {$education} </td>";
+                echo "<td> {$grade} </td>";
                 echo "</tr>";
               }
               echo "</table>";
