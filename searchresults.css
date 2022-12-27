@@ -197,7 +197,7 @@ button a{
   border-radius: 30px;
 }
 
-label [id = "email"]{
+label [name = "email"]{
   font-weight: bold;
 }
 

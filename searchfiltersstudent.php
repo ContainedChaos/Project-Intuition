@@ -60,9 +60,9 @@
                   $email = $row['email'];
                   ?>
                   <div class = "info"><a href = "viewtutorprofile.php?email=<?php echo $email;?>"><?php echo $row['name'];?></a><br>
-                  <label id = "email">Email:</label> <label><?php echo $row['email'];?></label><br>
-                  <label id = "institution">Institution:</label> <label> <?php echo $row['institution'];?></label><br>
-                  <label id = "phone">Phone:</label> <label> <?php echo $row['phone'];?></label>
+                  <label name = "email">Email:</label> <label><?php echo $row['email'];?></label><br>
+                  <label name = "institution">Institution:</label> <label> <?php echo $row['institution'];?></label><br>
+                  <label name = "phone">Phone:</label> <label> <?php echo $row['phone'];?></label>
                   </div>
                   <?php 
                   }  
