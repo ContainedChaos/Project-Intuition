@@ -17,6 +17,43 @@
     $query = "SELECT * From tutor natural join tutorpreferences Where email = '$email'";
     $result = mysqli_query($conn, $query);
     $row = mysqli_fetch_array($result);
+
+    if($row['gender'] == "f")
+      $gender = "Female";
+    else if($row['gender'] == "m")
+      $gender = "Male";
+    else if($row['gender'] == "o")
+      $gender = "Other";
+
+    if($row['version'] == "e")
+      $version = "English Medium";
+    else if($row['version'] == "b")
+      $version = "Bangla Medium";
+    else if($row['version'] == "v")
+      $version = "English Version";
+
+    if($row['mode'] == "n")
+      $mode = "Online";
+    else if($row['mode'] == "f")
+      $mode = "Offline";
+
+    if($row['salaryrange'] == "threetofive")
+      $salaryrange = "3000 to 5000";
+    else if($row['salaryrange'] == "fivetoeight")
+      $salaryrange = "5000 to 8000";
+    else if($row['salaryrange'] == "eighttoten")
+      $salaryrange = "8000 to 10000";
+    else if($row['salaryrange'] == "tentofifteen")
+      $salaryrange = "10000 to 15000";
+    else if($row['salaryrange'] == "fifteentotwenty")
+      $salaryrange = "15000 to 20000";
+
+    if($row['education'] == "c")
+      $education = "College";
+    else if($row['education'] == "u")
+      $education = "Undergraduate";
+    else if($row['education'] == "p")
+      $education = "Postgraduate";
   }
 ?>
 
@@ -55,7 +92,7 @@
             <label style = "margin-right: 87px;">Gender</label>
             <label style = "margin-right: 10px;">:</label>
             <?php
-              echo $row['gender'];
+              echo $gender;
             ?>
           </div>
           <div class = "attribute">
@@ -87,17 +124,17 @@
             ?>
           </div>
           <div class = "attribute">
-            <label style = "margin-right: 102px;">Grade</label>
+            <label style = "margin-right: 70px;">Education</label>
             <label style = "margin-right: 10px;">:</label>
             <?php
-              echo $row['education'];
+              echo $education;
             ?>
           </div>
           <div class = "attribute">
             <label style = "margin-right: 92px;">Version</label>
             <label style = "margin-right: 10px;">:</label>
             <?php
-              echo $row['version'];
+              echo $version;
             ?>
           </div>
           <div class = "attribute">
@@ -111,7 +148,7 @@
             <label style = "margin-right: 34px;">Preferred Mode</label>
             <label style = "margin-right: 10px;">:</label>
             <?php
-              echo $row['mode'];
+              echo $mode;
             ?>
           </div>
           <div class = "attribute">
@@ -125,7 +162,7 @@
             <label style = "margin-right: 50px;">Salary Range</label>
             <label style = "margin-right: 10px;">:</label>
             <?php
-              echo $row['salaryrange'];
+              echo $salaryrange;
             ?>
           </div>
           </div>

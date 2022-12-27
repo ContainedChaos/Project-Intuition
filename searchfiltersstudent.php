@@ -42,7 +42,7 @@
         <div class = "wrapper">
         <div class = "title">
             <h1>Search results</h1>
-           
+       </div>
         <div class = "content">
             
                 <?php
@@ -50,32 +50,24 @@
                   $query = "SELECT * From tutor natural join tutorpreferences Where gender = '$gender' AND version = '$version' AND mode = '$mode'";
                   $result = mysqli_query($conn, $query);
 
-              echo "<table border = '1px'>";
-              while($row = mysqli_fetch_array($result))
-              {
-                $name = $row['name'];
-                $email = $row['email'];
-                $institution = $row['institution'];
-                $education = $row['education'];
-        
-                echo "<tr>";
-                echo "<td> <a href = \"viewtutorprofile.php?email=$email\"> {$name} </a> </td>";
-                echo "<td> {$email} </td>";
-                echo "<td> {$institution} </td>";
-                echo "<td> {$education} </td>";
-                echo "</tr>";
-              }
-              echo "</table>";
-          
+                  if($result->num_rows == 0)
+                  {
+                    echo "No match found.";
+                  }
 
-            if($result->num_rows == 0)
-            {
-              echo "No match found.";
-            }
-            ?>
+                  while ($row = mysqli_fetch_array($result))
+                  {
+                  $email = $row['email'];
+                  ?>
+                  <div class = "info"><a href = "viewtutorprofile.php?email=<?php echo $email;?>"><?php echo $row['name'];?></a><br>
+                  <label id = "email">Email:</label> <label><?php echo $row['email'];?></label><br>
+                  <label id = "institution">Institution:</label> <label> <?php echo $row['institution'];?></label><br>
+                  <label id = "phone">Phone:</label> <label> <?php echo $row['phone'];?></label>
+                  </div>
+                  <?php 
+                  }  
+                  ?>
         </div> 
-
         </div>
-          </div>
     </body>
 </html>
