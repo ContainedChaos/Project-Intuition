@@ -14,7 +14,7 @@
                   <li><a href="#">Dashboard</a></li>
                   <li><a href="searchfiltersstudent.html">Search</a></li>
                   <li><a href="studentprofile.php">My Profile</a></li>
-                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="contact-us.html">Contact Us</a></li>
                 </ul>
                 <button>
                     <a href = "homepage.html">Logout</a>
