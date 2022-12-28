@@ -37,8 +37,9 @@
     $mail->isHTML(true);
     $mail->Subject = "Test Mail";
     $mail->setFrom("intuitionverify@gmail.com");
-    $mail->Body = "Thank you for registering. Click the link to verify your email
-                   <a href='http://localhost/Project-Intuition/verifystudent.php?email=$email&vkey=$vkey'> Verify </a>";
+    $mail->Body = "Thank you for registering. Click 
+                   <a href='http://localhost/Project-Intuition/verifystudent.php?email=$email&vkey=$vkey'> here </a> to verify your email.
+                   <br><br>Regards,<br>InTuition Team.";
 
     $mail->addAddress($email);
     if($mail->Send()){
