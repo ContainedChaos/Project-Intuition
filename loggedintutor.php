@@ -11,7 +11,7 @@
                 <ul>
                   <li><a href="#">Home</a></li>
                   <li><a href="#">Dashboard</a></li>
-                  <li><a href="searchfilterstutor.html">Search</a></li>
+                  <li><a href="findstudents.php">Search</a></li>
                   <li><a href="tutorviewreq.php">Requests</a></li>
                   <li><a href="tutorprofile.php">My Profile</a></li>
                   <li><a href="contact-us.html">Contact Us</a></li>

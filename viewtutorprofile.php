@@ -55,6 +55,9 @@
     else if($row['education'] == "p")
       $education = "Postgraduate";
   }
+
+  $query2 = "SELECT * FROM reviews WHERE tutor = '$email'";
+  $result2 = mysqli_query($conn, $query2);
 ?>
 
 <!DOCTYPE html>
@@ -180,11 +183,32 @@
             ?>
           </div>
           </div>
-          <div class ="inputfield">
+          <div class ="attribute">
             <form action = "sendrequesttotutor.php" method = "post">
               <input type = "submit" value = "Send Request" class = "btn" name = "sendrequest">
               <input type = "hidden" name = "email" value = "<?php echo $email; ?>">
             </form>
+          </div>
+          <div class = "attribute">
+            <h2>Reviews</h2>
+            <?php
+            if($result2->num_rows != 0)
+            {
+              while($row2 = mysqli_fetch_array($result2))
+              {
+            ?>
+              <label>"</label><label><?php echo $row2['review'];?></label><label>"</label><br>
+          </div>
+            <?php 
+              } 
+            }
+            else
+            {
+              ?>
+              <label><?php echo "No reviews to show.";?></label>
+              <?php
+            } 
+            ?>
           </div>
       </div>
   </body>
