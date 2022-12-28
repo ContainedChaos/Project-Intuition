@@ -39,7 +39,7 @@ use PHPMailer\PHPMailer\Exception;
     $mail->Subject = "Test Mail";
     $mail->setFrom("intuitionverify@gmail.com");
     $mail->Body = "Thank you for registering. Click 
-                   <a href='http://localhost/InTuition/verifytutor.php?email=$email&vkey=$vkey'> here </a>to verify your email.
+                   <a href='http://localhost/Project-Intuition-1/verifytutor.php?email=$email&vkey=$vkey'> here </a>to verify your email.
                    <br><br>Regards,<br>InTuition Team.";
 
     $mail->addAddress($email);

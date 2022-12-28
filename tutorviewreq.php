@@ -29,7 +29,7 @@
           <div class = "navbar">
               <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="dashboardstudent.php">Dashboard</a></li>
+                <li><a href="dashboardtutor.php">Dashboard</a></li>
                 <li><a href="#">Search</a></li>
                 <li><a href="#">Requests</a></li>
                 <li><a href="#">My Profile</a></li>
@@ -46,19 +46,19 @@
           {
             $requester = $row['frommail'];
 
-            $query2 = "SELECT * FROM tutor natural join tutorpreferences WHERE email = '$requester'";
+            $query2 = "SELECT * FROM student natural join studentpreferences WHERE email = '$requester'";
             $result2 = mysqli_query($conn, $query2);
-            $tutorinfo = mysqli_fetch_array($result2);
+            $studentinfo = mysqli_fetch_array($result2);
          ?>
                   <div class = "info">
-                  <a href = "receivedtutorprofile.php?email=<?php echo $requester;?>" style="font-weight:bold; font-size:20px; text-decoration:none"><?php echo $tutorinfo['name'];?></a><br>
-                  <label id = "institution" style="font-weight:bold;">Institution</label> <label style="margin-left:9px; margin-right:4px; font-weight:bold;">:</label> <label> <?php echo $tutorinfo['institution'];?></label><br>
-                  <label id = "availability" style="font-weight:bold;">Availability</label> <label style="margin-left:5px; margin-right:4px; font-weight:bold;">:</label> <label><?php echo $tutorinfo['availability'];?></label><br>
-                  <label id = "subjects" style="font-weight:bold;">Subject(s)</label> <label style="margin-left:13px; margin-right:4px; font-weight:bold;">:</label> <label><?php echo $tutorinfo['subjects'];?></label><br>
-                  <label id = "email" style="font-weight:bold;">Email</label> <label style="margin-left:47px; margin-right:4px; font-weight:bold;">:</label> <label><?php echo $tutorinfo['email'];?></label><br>
+                  <a href = "receivedstudentprofile.php?email=<?php echo $requester;?>" style="font-weight:bold; font-size:20px; text-decoration:none"><?php echo $studentinfo['name'];?></a><br>
+                  <label id = "institution" style="font-weight:bold;">Institution</label> <label style="margin-left:9px; margin-right:4px; font-weight:bold;">:</label> <label> <?php echo $studentinfo['institution'];?></label><br>
+                  <label id = "availability" style="font-weight:bold;">Availability</label> <label style="margin-left:5px; margin-right:4px; font-weight:bold;">:</label> <label><?php echo $studentinfo['availability'];?></label><br>
+                  <label id = "subjects" style="font-weight:bold;">Subject(s)</label> <label style="margin-left:13px; margin-right:4px; font-weight:bold;">:</label> <label><?php echo $studentinfo['subjects'];?></label><br>
+                  <label id = "email" style="font-weight:bold;">Email</label> <label style="margin-left:47px; margin-right:4px; font-weight:bold;">:</label> <label><?php echo $studentinfo['email'];?></label><br>
                   <div class = "inputfield">
 
-                  <form action = "processrequest.php?email=<?php echo $requester;?>" method = "post">
+                  <form action = "processrequest2.php?email=<?php echo $requester;?>" method = "post">
                   <input type = "submit" value = "Accept" class = "btn" name = "accept">
                   <input type = "submit" value = "Reject" class = "btn" name = "reject">
                   </form>
