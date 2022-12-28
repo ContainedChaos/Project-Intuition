@@ -10,7 +10,7 @@
         <div class = "banner">
             <div class = "navbar">
                 <ul>
-                  <li><a href="#">Home</a></li>
+                  <li><a href="loggedinstudent.php">Home</a></li>
                   <li><a href="dashboardstudent.php">Dashboard</a></li>
                   <li><a href="searchfiltersstudent.html">Search</a></li>
                   <li><a href="studentviewreq.php">Requests</a></li>

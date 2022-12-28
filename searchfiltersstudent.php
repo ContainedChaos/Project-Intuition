@@ -29,9 +29,9 @@
         <div class = "banner">
             <div class = "navbar">
                 <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Dashboard</a></li>
-                  <li><a href="#">Search</a></li>
+                <li><a href="loggedinstudent.php">Home</a></li>
+                  <li><a href="dashboardstudent.php">Dashboard</a></li>
+                  <li><a href="searchfiltersstudent.html">Search</a></li>
                   <li><a href="studentprofile.php">My Profile</a></li>
                   <li><a href="contact-us.html">Contact Us</a></li>
                 </ul>
@@ -49,14 +49,17 @@
             
                 <?php
 
-                  $query = "SELECT * From tutor natural join tutorpreferences Where gender = '$gender' AND version = '$version' AND mode = '$mode' AND area = '$area' AND salaryrange = '$salaryrange'";
+                  $query = "SELECT * From tutor natural join tutorpreferences Where gender = '$gender' AND version = '$version' AND mode = '$mode' AND area = '$area' AND salaryrange = '$salaryrange' AND slots > 0";
                   $result = mysqli_query($conn, $query);
 
                   if($result->num_rows == 0)
                   {
-                    echo "No match found.";
+                    ?>
+                    <div class = "nomatch">
+                    <label style="color:#ffffffe6"><?php echo "No match found.";?></label>
+                  </div>
+                    <?php
                   }
-
                   while ($row = mysqli_fetch_array($result))
                   {
                   $email = $row['email'];

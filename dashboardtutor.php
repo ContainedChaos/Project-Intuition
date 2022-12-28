@@ -36,11 +36,11 @@
       <div class = "banner">
           <div class = "navbar">
               <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="loggedintutor.php">Home</a></li>
                 <li><a href="dashboardtutor.php">Dashboard</a></li>
-                <li><a href="#">Search</a></li>
-                <li><a href="#">Requests</a></li>
-                <li><a href="#">My Profile</a></li>
+                <li><a href="searchfilterstutor.html">Search</a></li>
+                <li><a href="tutorviewreq.php">Requests</a></li>
+                <li><a href="tutorprofile.php">My Profile</a></li>
                 <li><a href="contact-us.html">Contact Us</a></li>
               </ul>
           </div>
@@ -72,7 +72,7 @@
         {
           while($row = mysqli_fetch_array($resultsecond))
           {
-            $studmail2 = $row['frommail'];
+            $studmail2 = $row['tomail'];
             $queryyy = "SELECT * FROM student natural join studentpreferences WHERE email = '$studmail2'";
             $resulttt = mysqli_query($conn, $queryyy);
             $studinfo2 = mysqli_fetch_array($resulttt);

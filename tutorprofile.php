@@ -25,9 +25,9 @@
           <div class = "navbar">
               <ul>
                   <li><a href="loggedintutor.php">Home</a></li>
-                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="dashboardtutor.php">Dashboard</a></li>
                   <li><a href="searchfilterstutor.html">Search</a></li>
-                  <li><a href="#">My Profile</a></li>
+                  <li><a href="tutorprofile.php">My Profile</a></li>
                   <li><a href="contact-us.html">Contact Us</a></li>
               </ul>
               <button>

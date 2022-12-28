@@ -36,11 +36,11 @@
       <div class = "banner">
           <div class = "navbar">
               <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="loggedinstudent.php">Home</a></li>
                 <li><a href="dashboardstudent.php">Dashboard</a></li>
-                <li><a href="#">Search</a></li>
-                <li><a href="#">Requests</a></li>
-                <li><a href="#">My Profile</a></li>
+                <li><a href="searchfiltersstudent.html">Search</a></li>
+                <li><a href="studentviewreq.php">Requests</a></li>
+                <li><a href="studentprofile.php">My Profile</a></li>
                 <li><a href="contact-us.html">Contact Us</a></li>
               </ul>
           </div>
