@@ -20,6 +20,8 @@
     {
         $mode = $_POST['updateMode'];
         $area = $_POST['updateArea'];
+        $subjects = $_POST['updateSubjects'];
+        $availability = $_POST['updateAvailability'];
         $slots = $_POST['updateSlots'];
         $salaryrange = $_POST['updateSalaryrange'];
     
@@ -29,7 +31,7 @@
     
         if ($qres->num_rows == 1)
         {
-                $update = "UPDATE tutorpreferences SET mode = '$mode', area = '$area', slots = '$slots', salaryrange = '$salaryrange' where id = $currentid";
+                $update = "UPDATE tutorpreferences SET mode = '$mode', area = '$area', subjects = '$subjects', availability = '$availability', slots = '$slots', salaryrange = '$salaryrange' where id = $currentid";
                 //$update2 = "UPDATE tutor SET password = '$password' where email = '$email' && vkey = '$vkey'";
     
                 $result = mysqli_query($conn, $update);
@@ -37,6 +39,8 @@
 
                 $_SESSION['mode'] = $mode;
                 $_SESSION['area'] = $area;
+                $_SESSION['subjects'] = $subjects;
+                $_SESSION['availability'] = $availability;
                 $_SESSION['slots'] = $slots;
                 $_SESSION['salaryrange'] = $salaryrange;
 
