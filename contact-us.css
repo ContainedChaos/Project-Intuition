@@ -31,11 +31,11 @@ section{
 .contact-form h1{
     font-size: 80px;
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 span{
-    color: #f9004d;
+    color: #3e968d;
 }
 
 .contact-form p{
@@ -43,7 +43,7 @@ span{
     letter-spacing: 1px;
     line-height: 26px;
     font-size: 1.1rem;
-    margin-bottom: 3.8rem;
+    margin-bottom: 20px;
 }
 
 .contact-form form{
@@ -69,9 +69,9 @@ form textarea{
 }
 
 .contact-form form .btn{
-    margin-left: 220px;
+    margin-left: 120px;
     display: inline-block;
-    background: #f9004d;
+    background: #3e968d;
     font-size: 1.1rem;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -84,12 +84,12 @@ form textarea{
 }
 
 .contact-form form .btn:hover{
-    border: 2px solid #f9004d;
+    border: 2px solid #3e968d;
     background: transparent;
     transform: scale(1.1);
 }
 
-@media (max-width: 1570px){
+@media (max-width: 1480px){
     section{
         padding: 80px 3%;
         transition: .2s;
@@ -122,7 +122,7 @@ form textarea{
         width: 100%;
         height: auto;
         text-align: center;
-        margin-top: 200px;
+        margin-top: 20px;
         
     }
 }

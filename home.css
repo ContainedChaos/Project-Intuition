@@ -8,9 +8,9 @@
     text-decoration: none;
 }
 :root{
-    --main-color: #ff702a;
+    --main-color: #3e968d;
     --text-color: #fff;
-    --bg-color: #1e1c2a;
+    --bg-color: #181718;
     --big-font: 5rem;
     --h2-font: 2.25rem;
     --p-font: 0.9rem;
@@ -21,7 +21,9 @@
 }
 body{
     color: var(--text-color);
-    background: var(--bg-color);
+    background-image: url(home_background.jpg);
+    background-size: auto;
+    background-position: top;
 }
 header{
     position: fixed;
@@ -63,13 +65,15 @@ section{
 }
 .home{
     width: 100%;
-    min-height: 90vh;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.5rem;
     align-items: center;  
 }
 .home-img img{
+    margin-top: 175px;
+    margin-left: 50px;
     max-width: 100%;
     width: 600px;
     height: auto;
@@ -88,8 +92,20 @@ section{
     background: var(--main-color);
     color: #fff;
     border-radius: 0.5rem;
+    margin-right: 30px;
 }
 .btn:hover{
+    transform: scale(1.2) translateY(10px);
+    transition: .4s;
+}
+.btn2{
+    display: inline-block;
+    padding: 10px 27px;
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 0.5rem;
+}
+.btn2:hover{
     transform: scale(1.2) translateY(10px);
     transition: .4s;
 }
@@ -107,6 +123,7 @@ section{
 .about-text span{
     color: var(--main-color);
     font-weight: 600;
+    font-size: 25px;
 }
 .about-text h2{
     font-size: var(--h2-font);
@@ -125,6 +142,16 @@ section{
 .heading h2{
     font-size: var(--h2-font);
 }
+.heading2{
+    text-align: center;
+}
+.heading2 span{
+    color: var(--main-color);
+    font-weight: 600; 
+}
+.heading2 h2{
+    font-size: var(--h2-font);
+}
 .menu-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, auto));
@@ -139,9 +166,9 @@ section{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #feeee7;
+    background: #e8e7e7;
     padding: 20px;
-    border-radius: 0.5rem;
+    border-radius: 10rem;
 }
 .box-img{
     width: 220px;
@@ -153,7 +180,7 @@ section{
 }
 .box h2{
     font-size: 1.3rem;
-    color:var(--bg-color);
+    color:var(--main-color);
 }
 .box h3{
     color: var(--bg-color);
@@ -185,7 +212,7 @@ section{
     text-align: center;
     padding: 20px 30px;
 }
-s-box img{
+.s-box img{
     width: 90px;
 }
 .s-box h3{
@@ -197,7 +224,7 @@ s-box img{
     line-height: 1.7;
 }
 .cta{
-    background: #feeee7;
+    background: #e8e7e7;
     padding: 70px 0;
     text-align: center;
     width: 66%;
