@@ -9,8 +9,8 @@
         <div class = "banner">
             <div class = "navbar">
                 <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="loggedintutor.php">Home</a></li>
+                  <li><a href="dashboardtutor.php">Dashboard</a></li>
                   <li><a href="findstudents.php">Search</a></li>
                   <li><a href="tutorviewreq.php">Requests</a></li>
                   <li><a href="tutorprofile.php">My Profile</a></li>

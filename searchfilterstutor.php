@@ -29,9 +29,9 @@
         <div class = "banner">
             <div class = "navbar">
                 <ul>
-                  <li><a href="loggedintutor.php">Home</a></li>
-                  <li><a href="#">Dashboard</a></li>
-                  <li><a href="#">Search</a></li>
+                <li><a href="loggedintutor.php">Home</a></li>
+                  <li><a href="dashboardtutor.php">Dashboard</a></li>
+                  <li><a href="searchfilterstutor.html">Search</a></li>
                   <li><a href="tutorprofile.php">My Profile</a></li>
                   <li><a href="contact-us.html">Contact Us</a></li>
                 </ul>
@@ -54,7 +54,11 @@
 
                   if($result->num_rows == 0)
                   {
-                    echo "No match found.";
+                    ?>
+                    <div class = "nomatch">
+                    <label style="color:#ffffffe6; background-color:#0d877b; margin-left:680px;"><?php echo "No match found.";?></label>
+                  </div>
+                    <?php
                   }
                   
                   while ($row = mysqli_fetch_array($result))
