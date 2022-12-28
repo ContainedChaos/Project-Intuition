@@ -29,6 +29,22 @@
        </div>
 
        <div class="inputfield">
+        <label class = "required">Subjects</label>
+        <div class="tooltip"> ?
+          <span class="tooltiptext">Subjects that you prefer to teach separated by commas</span>
+        </div>
+        <input type="text" class="input" name = "subjects" required>
+       </div>
+
+       <div class="inputfield">
+        <label>Availability</label>
+        <div class="tooltip"> ?
+          <span class="tooltiptext">Days that you are available to tutor separated by commas</span>
+        </div>
+        <input type="text" class="input" name = "availability" required>
+       </div>
+
+       <div class="inputfield">
         <label class = "required">Slots</label>
         <input type="text" class="input" name = "slots" required>
       </div>

@@ -2,6 +2,8 @@
 
 $mode = $_POST['mode'];
 $area = $_POST['area'];
+$subjects = $_POST['subjects'];
+$availability = $_POST['availability'];
 $salaryrange = $_POST['salaryrange'];
 
 if(!empty($mode) && !empty($area))
@@ -34,7 +36,7 @@ if(isset($_POST['email']))
     {
         if($result->num_rows == 1)
         {
-            $query2 = "INSERT INTO studentpreferences (id, mode, area, salaryrange) values ('$id', '$mode', '$area', '$salaryrange')";
+            $query2 = "INSERT INTO studentpreferences (id, mode, area, subjects, availability, salaryrange) values ('$id', '$mode', '$area', '$subjects', '$availability', '$salaryrange')";
             if (mysqli_query($conn, $query2)){
                 header("Location: signup-verify.html");
             }
