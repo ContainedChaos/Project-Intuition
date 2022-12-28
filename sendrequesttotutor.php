@@ -31,7 +31,7 @@ else
   
     if($result)
     {
-        header("Location: viewrequestedstudentprofile.php?email=$tomail");
+        header("Location: viewrequestedtutorprofile.php?email=$tomail");
     }
     else{
         echo "Error";

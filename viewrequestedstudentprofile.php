@@ -14,7 +14,7 @@
     echo "Connection failed!";
   }
   else{
-    $query = "SELECT * From tutor natural join tutorpreferences Where email = '$email'";
+    $query = "SELECT * From student natural join studentpreferences Where email = '$email'";
     $result = mysqli_query($conn, $query);
     $row = mysqli_fetch_array($result);
 
@@ -47,13 +47,6 @@
       $salaryrange = "10000 to 15000";
     else if($row['salaryrange'] == "fifteentotwenty")
       $salaryrange = "15000 to 20000";
-
-    if($row['education'] == "c")
-      $education = "College";
-    else if($row['education'] == "u")
-      $education = "Undergraduate";
-    else if($row['education'] == "p")
-      $education = "Postgraduate";
   }
 ?>
 
@@ -63,7 +56,7 @@
       <title>
         Project Intuition
       </title>
-      <link rel = "stylesheet" href = "tutorprofile.css">
+      <link rel = "stylesheet" href = "studentprofile.css">
   </head>
   <body>
       <div class = "banner">
@@ -124,10 +117,10 @@
             ?>
           </div>
           <div class = "attribute">
-            <label style = "margin-right: 70px;">Education</label>
+            <label style = "margin-right: 102px;">Grade</label>
             <label style = "margin-right: 10px;">:</label>
             <?php
-              echo $education;
+              echo $row['grade'];
             ?>
           </div>
           <div class = "attribute">
@@ -181,10 +174,7 @@
           </div>
           </div>
           <div class ="inputfield">
-            <form action = "sendrequesttotutor.php" method = "post">
-              <input type = "submit" value = "Send Request" class = "btn" name = "sendrequest">
-              <input type = "hidden" name = "email" value = "<?php echo $email; ?>">
-            </form>
+              <button type = "button" disabled>Request Sent</button>
           </div>
       </div>
   </body>

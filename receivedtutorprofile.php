@@ -180,12 +180,6 @@
             ?>
           </div>
           </div>
-          <div class ="inputfield">
-            <form action = "sendrequesttotutor.php" method = "post">
-              <input type = "submit" value = "Send Request" class = "btn" name = "sendrequest">
-              <input type = "hidden" name = "email" value = "<?php echo $email; ?>">
-            </form>
-          </div>
       </div>
   </body>
 </html>
