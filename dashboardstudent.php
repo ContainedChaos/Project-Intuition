@@ -63,7 +63,10 @@
             <label id = "availability" style="font-weight:bold;">Availability</label> <label style="margin-left:5px; margin-right:4px; font-weight:bold;">:</label> <label><?php echo $tutorinfo1['availability'];?></label><br>
             <label id = "subjects" style="font-weight:bold;">Subject(s)</label> <label style="margin-left:13px; margin-right:4px; font-weight:bold;">:</label> <label><?php echo $tutorinfo1['subjects'];?></label><br>
             <label id = "email" style="font-weight:bold;">Email</label> <label style="margin-left:47px; margin-right:4px; font-weight:bold;">:</label> <label><?php echo $tutorinfo1['email'];?></label><br>
-
+            
+            <form action = "writereview.php?email=<?php echo $tutormail1;?>" method = "post">
+                <input type = "submit" value = "Write a Review" class = "btn" name = "accept">
+            </form>
             <?php
           }
         }
