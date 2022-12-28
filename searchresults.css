@@ -196,8 +196,3 @@ button a{
   padding: 35px;
   border-radius: 30px;
 }
-
-label [name = "email"]{
-  font-weight: bold;
-}
-

@@ -115,6 +115,20 @@
             ?>
           </div>
           <div class = "attribute">
+            <label style = "margin-right: 74px;">Subject(s)</label>
+            <label style = "margin-right: 10px;">:</label>
+            <?php
+              echo $_SESSION['subjects'];
+            ?>
+          </div>
+          <div class = "attribute">
+            <label style = "margin-right: 66px;">Availability</label>
+            <label style = "margin-right: 10px;">:</label>
+            <?php
+              echo $_SESSION['availability'];
+            ?>
+          </div>
+          <div class = "attribute">
             <label style = "margin-right: 50px;">Salary Range</label>
             <label style = "margin-right: 10px;">:</label>
             <?php

@@ -2,6 +2,8 @@
     $gender = $_POST['gender'];
     $mode = $_POST['mode'];
     $version = $_POST['version'];
+    $area = $_POST['area'];
+    $salaryrange = $_POST['salaryrange'];
   
       $host = "localhost";
       $dbUsername = "root";
@@ -47,7 +49,7 @@
             
                 <?php
 
-                  $query = "SELECT * From tutor natural join tutorpreferences Where gender = '$gender' AND version = '$version' AND mode = '$mode'";
+                  $query = "SELECT * From tutor natural join tutorpreferences Where gender = '$gender' AND version = '$version' AND mode = '$mode' AND area = '$area' AND salaryrange = '$salaryrange'";
                   $result = mysqli_query($conn, $query);
 
                   if($result->num_rows == 0)
@@ -59,10 +61,11 @@
                   {
                   $email = $row['email'];
                   ?>
-                  <div class = "info"><a href = "viewtutorprofile.php?email=<?php echo $email;?>"><?php echo $row['name'];?></a><br>
-                  <label name = "email">Email:</label> <label><?php echo $row['email'];?></label><br>
-                  <label name = "institution">Institution:</label> <label> <?php echo $row['institution'];?></label><br>
-                  <label name = "phone">Phone:</label> <label> <?php echo $row['phone'];?></label>
+                  <div class = "info"><a href = "viewtutorprofile.php?email=<?php echo $email;?>" style="font-weight:bold; font-size:20px; text-decoration:none"><?php echo $row['name'];?></a><br>
+                  <label id = "institution" style="font-weight:bold;">Institution</label> <label style="margin-left:9px; margin-right:4px; font-weight:bold;">:</label> <label> <?php echo $row['institution'];?></label><br>
+                  <label id = "availability" style="font-weight:bold;">Availability</label> <label style="margin-left:5px; margin-right:4px; font-weight:bold;">:</label> <label><?php echo $row['availability'];?></label><br>
+                  <label id = "subjects" style="font-weight:bold;">Subject(s)</label> <label style="margin-left:13px; margin-right:4px; font-weight:bold;">:</label> <label><?php echo $row['subjects'];?></label><br>
+                  <label id = "email" style="font-weight:bold;">Email</label> <label style="margin-left:47px; margin-right:4px; font-weight:bold;">:</label> <label><?php echo $row['email'];?></label>
                   </div>
                   <?php 
                   }  

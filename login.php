@@ -60,6 +60,8 @@ if (isset($email) && isset($password)) {
 								$_SESSION['mode'] = "Offline";
 
 							$_SESSION['area'] = $row['area'];
+							$_SESSION['subjects'] = $row['subjects'];
+							$_SESSION['availability'] = $row['availability'];
 							
 							if($row['salaryrange'] == "threetofive")
 								$_SESSION['salaryrange'] = "3000 to 5000";
@@ -120,6 +122,8 @@ if (isset($email) && isset($password)) {
 								$_SESSION['mode'] = "Offline";
 
 							$_SESSION['area'] = $row['area'];
+							$_SESSION['subjects'] = $row['subjects'];
+							$_SESSION['availability'] = $row['availability'];
 							$_SESSION['slots'] = $row['slots'];
 							
 							if($row['salaryrange'] == "threetofive")

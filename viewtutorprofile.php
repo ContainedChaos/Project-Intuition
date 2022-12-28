@@ -159,6 +159,20 @@
             ?>
           </div>
           <div class = "attribute">
+            <label style = "margin-right: 74px;">Subject(s)</label>
+            <label style = "margin-right: 10px;">:</label>
+            <?php
+              echo $row['subjects'];
+            ?>
+          </div>
+          <div class = "attribute">
+            <label style = "margin-right: 66px;">Availability</label>
+            <label style = "margin-right: 10px;">:</label>
+            <?php
+              echo $row['availability'];
+            ?>
+          </div>
+          <div class = "attribute">
             <label style = "margin-right: 50px;">Salary Range</label>
             <label style = "margin-right: 10px;">:</label>
             <?php
