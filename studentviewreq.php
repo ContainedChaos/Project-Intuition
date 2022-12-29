@@ -24,20 +24,23 @@
       <link rel = "stylesheet" href = "studentviewreq.css">
   </head>
   <body>
+        <header>
+          <a href="#" class="logo">InTuition</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+
+            <ul class="navbar">
+              <li><a href="loggedinstudent.php">Home</a></li>
+              <li><a href="dashboardstudent.php">Dashboard</a></li>
+              <li><a href="hireatutor.php">Hire a Tutor</a></li>
+              <li><a href="studentviewreq.php">Requests</a></li>
+              <li><a href="studentprofile.php">My Profile</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+              <li><a href="home.html">Logout</a></li>
+            </ul>
+        </header>
     <div class = "wrapper">
-      <div class = "banner">
-          <div class = "navbar">
-              <ul>
-                <li><a href="loggedinstudent.php">Home</a></li>
-                <li><a href="dashboardstudent.php">Dashboard</a></li>
-                <li><a href="searchfiltersstudent.html">Search</a></li>
-                <li><a href="studentviewreq.php">Requests</a></li>
-                <li><a href="studentprofile.php">My Profile</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
-              </ul>
-          </div>
-      </div>
       <div class="content">
+      <h1>Your Requests</h1>
         <?php
           $query = "SELECT * FROM requests WHERE tomail = '$email' AND status = 'p'";
           $result = mysqli_query($conn, $query);
@@ -67,7 +70,7 @@
           }
         ?>
       </div>
-        </div>
+    </div>
   </body>
 
 </html>
