@@ -29,22 +29,29 @@
       <title>
         Project Intuition
       </title>
-      <link rel = "stylesheet" href = "studentviewreq.css">
+      <link rel = "stylesheet" href = "dashboardtutor.css">
   </head>
   <body>
-    <div class = "wrapper">
-      <div class = "banner">
-          <div class = "navbar">
-              <ul>
-                <li><a href="loggedintutor.php">Home</a></li>
-                <li><a href="dashboardtutor.php">Dashboard</a></li>
-                <li><a href="searchfilterstutor.html">Search</a></li>
-                <li><a href="tutorviewreq.php">Requests</a></li>
-                <li><a href="tutorprofile.php">My Profile</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
-              </ul>
-          </div>
-      </div>
+    
+    <header>
+          <a href="#" class="logo">InTuition</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+
+            <ul class="navbar">
+              <li><a href="loggedintutor.php">Home</a></li>
+              <li><a href="dashboardtutor.php">Dashboard</a></li>
+              <li><a href="findstudents.php">Find Students</a></li>
+              <li><a href="tutorviewreq.php">Requests</a></li>
+              <li><a href="tutorprofile.php">My Profile</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+              <li><a href="home.html">Logout</a></li>
+            </ul>
+        </header>
+
+        <div class = "wrapper">
+        <div class = "title">
+            <h1>Your students</h1>
+       </div>
       <div class="content">
         <?php
         if($resultfirst)
