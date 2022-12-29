@@ -1,0 +1,237 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-image: url(studentsignup.jpg);
+    background-size:23rem;
+    background-position: center;
+  padding: 0 10px;
+}
+.wrapper{
+  max-width: 750px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.86);
+  margin: 20px auto;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.wrapper .title{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #12514be6;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wrapper .form .inputfield{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .form .inputfield label{
+   width: 200px;
+   color: #000000;
+   margin-right: 10px;
+  font-size: 14px;
+}
+
+.wrapper .form .inputfield .input,
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  outline: none;
+  border: 1px solid #c3c4c4;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  background: #f0f0f0ca;
+}
+
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  height: 125px;
+  resize: none;
+}
+
+.wrapper .form .inputfield .custom_select{
+  position: relative;
+  width: 100%;
+  height: 37px;
+  opacity: 70%;
+}
+
+.wrapper .form .inputfield .custom_select:before{
+  content: "";
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  border: 8px solid;
+  border-color: #393838ca transparent transparent transparent;
+  pointer-events: none;
+}
+
+.wrapper .form .inputfield .custom_select select{
+  -webkit-appearance: none;
+  -moz-appearance:   none;
+  appearance:        none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #f0f0f0ca;
+  border-radius: 3px;
+}
+
+.wrapper .form .inputfield .btn{
+  width: 100%;
+   padding: 8px 10px;
+  font-size: 15px; 
+  border: 0px;
+  background:  #12514be6;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+.wrapper .form .inputfield .btn:hover{
+  background: #29a99ce6;
+}
+
+.required:before {
+  content: "*";
+  color: red;
+}
+
+.radiobutton {
+   color: #000000;
+  font-size: 14px;
+  display: inline-flex;
+}
+
+.radiobutton .required {
+  margin-right: 110px;
+  margin-bottom: 15px;
+}
+
+.radiobutton input[type = "radio"]{
+  margin-bottom: 15px;
+  margin-right: 5px;
+  
+}
+
+p {
+  margin-left: 170px;
+}
+
+p label{
+  margin-right: 50px;
+}
+
+.radiobutton label[for = "ev"]{
+  margin-right: 40px;
+}
+
+.radiobutton label[for = "em"]{
+  margin-right: 40px;
+}
+
+.radiobutton label[for = "male"]{
+  margin-right: 115px;
+}
+
+.radiobutton label[for = "female"]{
+  margin-right: 105px;
+}
+
+.radiobutton input[id = "on"]{
+  margin-left: -55px;
+}
+
+.radiobutton label[for = "on"]{
+  margin-right: 100px;
+}
+
+input[type = "file"]{
+  margin-left: -43px;
+}
+
+input[type = "text"]{
+  background-color: #eaebebdd;
+}
+
+
+.login_link2
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 402px;
+}
+
+.login_link2 a
+{
+  margin-left: 5px;
+    position: absolute;
+    color: #2691d9;
+    text-decoration: none;
+}
+
+.login_link2 a:hover
+{
+    text-decoration: underline;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  background: #12514be6;
+  padding: 2px 7px;
+  margin-left: -70px;
+  margin-right: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  color: #fff;
+
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #29a99ce6;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+

@@ -3,50 +3,58 @@
   padding: 0;
   font-family: sans-serif;
 }
-.banner{
-  width: 100%;
-  height: 100vh;
-  background-image: url(tutorprofile.jpg);
-  background-size: cover;
-  background-position: center;
-  opacity: 100%;
+:root{
+  --main-color: #3e968d;
+  --text-color: #fff;
+  --bg-color: #181718;
+  --big-font: 5rem;
+  --h2-font: 2.25rem;
+  --p-font: 0.9rem;
 }
-.navbar{
-  width: 85%;
-  margin: auto;
-  padding: 35px 0;
+*::selection{
+  background: var(--main-color);
+  color: #fff;
+}
+body{
+  color: var(--text-color);
+  background-image: url(home_background.jpg);
+  background-size: auto;
+  background-position: top;
+}
+.banner{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color:rgb(255, 255, 255);
+  padding: 30px 170px;
+  background: var(--bg-color);
 }
-.navbar ul{
-  margin-left: 380px;
+.logo{
+  color: var(--main-color);
+  font-weight: 600;
+  font-size: 2.4rem;
 }
-.navbar ul li{
-  list-style: none;
-  display: inline-block;
-  margin: 0 20px;
-  position: relative;
+.navbar{
+  display: flex;
 }
-.navbar ul li a{
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  text-decoration: uppercase;
-  opacity:unset;
+.navbar a{
+  color: var(--text-color);
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  font-weight: 500;
 }
-.navbar ul li::after{
-  content: '';
-  height: 3px;
-  width: 0;
-  background: #0d877b;
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  transition: 0.5s;
+.navbar a:hover{
+  color: var(--main-color);
+  transition: .4s; 
 }
-.navbar ul li:hover::after{
-  width: 100%;
+#menu-icon{
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
 }
 .wrapper{
   max-width: 600px;

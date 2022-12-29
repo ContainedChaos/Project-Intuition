@@ -19,7 +19,8 @@
             {
                 //print_r($row);
                 ?>
-                <div class = "center">
+                <link rel = "stylesheet" href = "updatetutorprofile.css">
+                <div class = "wrapper">
                 <form method = "post" action = "updatetutorprofilecode.php">
 
                     <div class = "txt_field">
