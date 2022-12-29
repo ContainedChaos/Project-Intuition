@@ -22,7 +22,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 30px 170px;
-    background: var(--bg-color);
+    background-image: url(contact-us.webp);
 }
 .logo{
     color: var(--main-color);

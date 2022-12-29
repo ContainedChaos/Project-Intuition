@@ -9,7 +9,7 @@
   body{
     background-image: url(userrole_bg.jpg);
     background-position: center;
-    background-size: cover;
+    background-size:cover;
     padding: 0 10px;
   }
   .wrapper{
@@ -30,7 +30,7 @@
   .wrapper .content{
     font-size: 15px;
     margin-bottom: 10px;
-    color: #010e0ce6;
+    color: #202020e6;
     text-align: center;
   }
   button{
