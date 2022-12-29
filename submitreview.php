@@ -26,7 +26,7 @@
         
             if ($res)
             {
-                echo "Review updated.";
+                header("Location: reviewdone.html");
             }
         }
         else
@@ -39,7 +39,7 @@
         
             if ($res)
             {
-                echo "Review added successfully.";
+                header("Location: reviewdone.html");
             }
         }
     }

@@ -19,7 +19,7 @@
     
         if ($res)
         {
-            echo "Message sent successfully.";
+            header("Location: messagesubmitted.html");
         }
     }
 
