@@ -5,11 +5,11 @@ body
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background-image: url(login.jpg);
+    background-image: url(login.png);
     height: 100vh;
     overflow: hidden;
-    background-position: center;
-    background-size: cover;
+    background-position: top;
+    background-size: auto;
 }
 
 .center
@@ -19,7 +19,7 @@ body
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
-    background: rgba(255, 255, 255, 0.796);
+    background: rgba(255, 255, 255, 0.862);
     border-radius: 10px;
 }
 
@@ -37,7 +37,7 @@ body
     text-align: center;
     padding: 0 0 20px 0;
     color: #0d877b;
-    border-bottom: 1px solid silver;
+    border-bottom: 1px solid rgb(179, 179, 179);
 }
 
 
@@ -70,7 +70,7 @@ form .txt_field
     position: absolute;
     top: 50%;
     left: 5px;
-    color: #adadad;
+    color: #868686;
     transform: translateY(-50%);
     font-size: 16px;
     pointer-events: none;
