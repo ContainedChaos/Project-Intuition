@@ -38,7 +38,7 @@
         <div class = "wrapper">
         <div class = "title">
             <h1>All students</h1>
-            <button style="margin-left:600px;"><a href = "searchfiltersstudent.html"><span></span>Add Filters</a></button>
+            <button style="margin-left:600px;"><a href = "searchfilterstutor.html"><span></span>Add Filters</a></button>
        </div>
         <div class = "content">
             <?php
