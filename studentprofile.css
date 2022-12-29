@@ -1,112 +1,113 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-  }
-  .banner{
-    width: 100%;
-    height: 100vh;
-    background-image: url(studentprofile.jpg);
-    background-size: cover;
-    background-position: center;
-    opacity: 100%;
-  }
-  .navbar{
-    width: 85%;
-    margin: auto;
-    padding: 35px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color:rgb(255, 255, 255);
-  }
-  .navbar ul{
-    margin-left: 380px;
-  }
-  .navbar ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    position: relative;
-  }
-  .navbar ul li a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    text-decoration: uppercase;
-    opacity:unset;
-  }
-  .navbar ul li::after{
-    content: '';
-    height: 3px;
-    width: 0;
-    background: #0d877b;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    transition: 0.5s;
-  }
-  .navbar ul li:hover::after{
-    width: 100%;
-  }
-  .wrapper{
-    max-width: 600px;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.701);
-    margin: 15px auto;
-    padding: 25px;
-    border-radius: 15px;
-  }
-  .attribute{
-    margin-bottom: 27px;
-    margin-left: 30px;
-    color: #12514be6;
-    font-weight: 600;
-  }
-  .name{
-    margin-bottom: 27px;
-    margin-top: 20px;
-    margin-left: 30px;
-    color: #12514be6;
-    font-weight: 600;
-  }
-  button{
-    width: 90px;
-    padding: 7px 0;
-    text-align: center;
-    
-    font-weight: bold;
-    border: 2px solid #0d877b;
-    background: #0d877b;
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+  overflow: hidden;
 }
-span{
-    background: #0d877b;
-    height: 100%;
-    width: 0;
-    border-radius: 25px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: 0.15s;
+:root{
+  --main-color: #3e968d;
+  --text-color: #fff;
+  --bg-color: #181718;
+  --big-font: 5rem;
+  --h2-font: 2.25rem;
+  --p-font: 0.9rem;
 }
-button:hover span{
-    width: 100%;
+*::selection{
+  background: var(--main-color);
+  color: #fff;
 }
-button:hover{
-    border: 100%;
-    background-color: #46b1a6;
-    transition: 0.15s;
+body{
+  color: var(--text-color);
+  background-image: url(home_background.jpg);
+  background-size: contain;
+  background-position: top;
+}
+header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 170px;
+  background: var(--bg-color);
+}
+.logo{
+  color: var(--main-color);
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+.navbar{
+  display: flex;
+}
+.navbar a{
+  color: var(--text-color);
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+.navbar a:hover{
+  color: var(--main-color);
+  transition: .4s; 
+}
+#menu-icon{
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+section{
+  padding: 70px 17%;
+}
+.home{
+  width:120%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+  align-items: center;  
+}
+.content{
+  margin-top: -245px;
+  margin-left: 50px;
+  max-width: 100%;
+  width: 600px;
+  height: auto;
+}
+.home-text h1{
+  font-size: var(--big-font);
+  color: var(--main-color);
+}
+.home-text h2{
+  font-size: var(--h2-font);
+  margin: 1rem 0 2rem;
+}
+button{
+  text-decoration:#fff;
+  display: inline-block;
+  padding: 10px 30px;
+  background: rgb(244, 240, 240);
+  font-weight: bold;
+  color: #fff;
+  border-radius: 0.5rem;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  margin-left: 100px;
 }
 
-p{
-    font-size: 18px;
+.content a{
+  text-decoration: none;
 }
 
-button a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+.menu-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  grid-gap: 1.5rem;
+  align-items: center;
 }
+

@@ -25,7 +25,6 @@ body{
   background-image: url(home_background.jpg);
   background-size: contain;
   background-position: top;
-  background-
 }
 header{
   position: fixed;
@@ -92,7 +91,8 @@ button{
   text-decoration: none;
   display: inline-block;
   padding: 10px 30px;
-  background: var(--main-color);
+  background: rgb(244, 240, 240);
+  font-weight: bold;
   color: #fff;
   border-radius: 0.5rem;
   margin-right: 30px;

@@ -15,132 +15,142 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <title>
-        Project Intuition
-      </title>
-      <link rel = "stylesheet" href = "studentprofile.css">
+    <meta charset = "utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="studentprofile.css"/>
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   </head>
   <body>
-      <div class = "banner">
-          <div class = "navbar">
-              <ul>
-                  <li><a href="loggedinstudent.php">Home</a></li>
-                  <li><a href="dashboardstudent.php">Dashboard</a></li>
-                  <li><a href="searchfiltersstudent.html">Search</a></li>
-                  <li><a href="studentviewreq.php">Requests</a></li>
-                  <li><a href="studentprofile.php">My Profile</a></li>
-                  <li><a href="contact-us.html">Contact Us</a></li>
-              </ul>
-              <button>
-                    <a href = "homepage.html">Logout</a>
-              </button>
-          </div>
-          <div class = "wrapper">
+        <header>
+          <a href="#" class="logo">InTuition</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+
+            <ul class="navbar">
+              <li><a href="loggedinstudent.php">Home</a></li>
+              <li><a href="dashboardstudent.php">Dashboard</a></li>
+              <li><a href="hireatutor.php">Hire a Tutor</a></li>
+              <li><a href="studentviewreq.php">Requests</a></li>
+              <li><a href="studentprofile.php">My Profile</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+              <li><a href="home.html">Logout</a></li>
+            </ul>
+        </header>
+
+    <section class="home" id="home">
+    <div class = "wrapper" style="background-color:#555555; padding:30px; border-radius:20px; height: 500px; margin-top:100px;">
         
-          <div class = "name">
-            <label style = "margin-right: 99px;">Name</label>
-            <label style = "margin-right: 10px;">:</label>
-            <?php
-              session_start();
-              echo $_SESSION['name'];
-            ?>
-          </div>
-          <div class = "attribute">
-            <label style = "margin-right: 87px;">Gender</label>
-            <label style = "margin-right: 10px;">:</label>
-            <?php
-              echo $_SESSION['gender'];
-            ?>
-          </div>
-          <div class = "attribute">
-            <label style = "margin-right: 95px;">Phone</label>
-            <label style = "margin-right: 10px;">:</label>
-            <?php
-              echo $_SESSION['phone'];
-            ?>
-          </div>
-          <div class = "attribute">
-            <label style = "margin-right: 102px;">Email</label>
-            <label style = "margin-right: 10px;">:</label>
-            <?php
-              echo $_SESSION['email'];
-            ?>
-          </div>
-          <div class = "attribute">
-            <label style = "margin-right: 115px;">Age</label>
-            <label style = "margin-right: 10px;">:</label>
-            <?php
-              echo $_SESSION['age'];
-            ?>
-          </div>
-          <div class = "attribute">
-            <label style = "margin-right: 83px;">Address</label>
-            <label style = "margin-right: 10px;">:</label>
-            <?php
-              echo $_SESSION['address'];
-            ?>
-          </div>
-          <div class = "attribute">
-            <label style = "margin-right: 102px;">Grade</label>
-            <label style = "margin-right: 10px;">:</label>
-            <?php
-              echo $_SESSION['grade'];
-            ?>
-          </div>
-          <div class = "attribute">
-            <label style = "margin-right: 92px;">Version</label>
-            <label style = "margin-right: 10px;">:</label>
-            <?php
-              echo $_SESSION['version'];
-            ?>
-          </div>
-          <div class = "attribute">
-            <label style = "margin-right: 73px;">Institution</label>
-            <label style = "margin-right: 10px;">:</label>
-            <?php
-              echo $_SESSION['institution'];
-            ?>
-          </div>
-          <div class = "attribute">
-            <label style = "margin-right: 34px;">Preferred Mode</label>
-            <label style = "margin-right: 10px;">:</label>
-            <?php
-              echo $_SESSION['mode'];
-            ?>
-          </div>
-          <div class = "attribute">
-            <label style = "margin-right: 41px;">Preferred Area</label>
-            <label style = "margin-right: 10px;">:</label>
-            <?php
-              echo $_SESSION['area'];
-            ?>
-          </div>
-          <div class = "attribute">
-            <label style = "margin-right: 74px;">Subject(s)</label>
-            <label style = "margin-right: 10px;">:</label>
-            <?php
-              echo $_SESSION['subjects'];
-            ?>
-          </div>
-          <div class = "attribute">
-            <label style = "margin-right: 66px;">Availability</label>
-            <label style = "margin-right: 10px;">:</label>
-            <?php
-              echo $_SESSION['availability'];
-            ?>
-          </div>
-          <div class = "attribute">
-            <label style = "margin-right: 50px;">Salary Range</label>
-            <label style = "margin-right: 10px;">:</label>
-            <?php
-              echo $_SESSION['salaryrange'];
-            ?>
-          </div>
-          </div>
-      </div>
-      <div class="content">
-            <button type = "button"><a href = "updatestudentprofile.php"><span></span>Update Profile</a></button>
+        <div class = "name" style ="margin-bottom: 5px;">
+          <label style = "margin-right: 99px; font-weight:bold;">Name</label>
+          <label style = "margin-right: 10px;">:</label>
+          <?php
+            session_start();
+            echo $_SESSION['name'];
+          ?>
+        </div>
+        <div class = "attribute" style ="margin-bottom: 5px;">
+          <label style = "margin-right: 88px; font-weight:bold;">Gender</label>
+          <label style = "margin-right: 10px;">:</label>
+          <?php
+            echo $_SESSION['gender'];
+          ?>
+        </div>
+        <div class = "attribute" style ="margin-bottom: 5px;">
+          <label style = "margin-right: 97px; font-weight:bold;">Phone</label>
+          <label style = "margin-right: 10px;">:</label>
+          <?php
+            echo $_SESSION['phone'];
+          ?>
+        </div>
+        <div class = "attribute" style ="margin-bottom: 5px;">
+          <label style = "margin-right: 103px; font-weight:bold;">Email</label>
+          <label style = "margin-right: 10px;">:</label>
+          <?php
+            echo $_SESSION['email'];
+          ?>
+        </div>
+        <div class = "attribute" style ="margin-bottom: 5px;">
+          <label style = "margin-right: 116px; font-weight:bold;">Age</label>
+          <label style = "margin-right: 10px;">:</label>
+          <?php
+            echo $_SESSION['age'];
+          ?>
+        </div>
+        <div class = "attribute" style ="margin-bottom: 5px;">
+          <label style = "margin-right: 81px; font-weight:bold;">Address</label>
+          <label style = "margin-right: 10px;">:</label>
+          <?php
+            echo $_SESSION['address'];
+          ?>
+        </div>
+        <div class = "attribute" style ="margin-bottom: 5px;">
+          <label style = "margin-right: 99px; font-weight:bold;">Grade</label>
+          <label style = "margin-right: 10px;">:</label>
+          <?php
+            echo $_SESSION['grade'];
+          ?>
+        </div>
+        <div class = "attribute" style ="margin-bottom: 5px;">
+          <label style = "margin-right: 86px; font-weight:bold;">Version</label>
+          <label style = "margin-right: 10px;">:</label>
+          <?php
+            echo $_SESSION['version'];
+          ?>
+        </div>
+        <div class = "attribute" style ="margin-bottom: 5px;">
+          <label style = "margin-right: 65px; font-weight:bold;">Institution</label>
+          <label style = "margin-right: 10px;">:</label>
+          <?php
+            echo $_SESSION['institution'];
+          ?>
+        </div>
+        <div class = "attribute" style ="margin-bottom: 5px;">
+          <label style = "margin-right: 25px; font-weight:bold;">Preferred Mode</label>
+          <label style = "margin-right: 10px;">:</label>
+          <?php
+            echo $_SESSION['mode'];
+          ?>
+        </div>
+        <div class = "attribute" style ="margin-bottom: 5px;">
+          <label style = "margin-right: 32px; font-weight:bold;">Preferred Area</label>
+          <label style = "margin-right: 10px;">:</label>
+          <?php
+            echo $_SESSION['area'];
+          ?>
+        </div>
+        <div class = "attribute" style ="margin-bottom: 5px;">
+          <label style = "margin-right: 65px; font-weight:bold;">Subject(s)</label>
+          <label style = "margin-right: 10px;">:</label>
+          <?php
+            echo $_SESSION['subjects'];
+          ?>
+        </div>
+        <div class = "attribute" style ="margin-bottom: 5px;">
+          <label style = "margin-right: 57px; font-weight:bold;">Availability</label>
+          <label style = "margin-right: 10px;">:</label>
+          <?php
+            echo $_SESSION['availability'];
+          ?>
+        </div>
+        <div class = "attribute">
+          <label style = "margin-right: 42px; font-weight:bold;">Salary Range</label>
+          <label style = "margin-right: 10px;">:</label>
+          <?php
+            echo $_SESSION['salaryrange'];
+          ?>
+        </div>
+        </div>
+
+        <div class="content">
+            <button type = "button" style="padding: 10px 50px;"><a href = "updatestudentprofile.php"><span></span>Update Profile</a></button><br>
             <button type = "button"><a href = "updatestudentpref.php"><span></span>Update Preferences</a></button>
-      </div>
+          </div>
+    </section>
+
+    
   </body>
 </html>
