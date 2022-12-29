@@ -22,7 +22,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 30px 170px;
-    background-image: url(contact-us.webp);
+    background-image: url(contact.jpg);
 }
 .logo{
     color: var(--main-color);
@@ -53,7 +53,8 @@ section{
 }
 
 .contact{
-    background: #101010;
+    background-image: url(contact.jpg);
+    background-size: cover;
     height: 100%;
     width: 100%;
     min-height: 100vh;
@@ -68,7 +69,7 @@ section{
     width: 720px;
     height: auto;
     border-radius: 10px;
-    margin-top: 118px;
+    margin-top: 100px;
 }
 
 .contact-form h1{
