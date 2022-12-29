@@ -180,6 +180,10 @@ input[type = "file"]{
   margin-left: -43px;
 }
 
+input[type = "text"]{
+  background-color: #eaebebdd;
+}
+
 .education .required {
   margin-right: 90px;
 }

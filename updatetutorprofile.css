@@ -14,7 +14,7 @@ body{
   padding: 0 10px;
 }
 .wrapper{
-  max-width: 750px;
+  max-width: 650px;
   width: 100%;
   background: rgba(255, 255, 255, 0.86);
   margin: 20px auto;
@@ -23,30 +23,20 @@ body{
   border-radius: 30px;
 }
 
-.wrapper .title{
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 25px;
-  color: #12514be6;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.wrapper .form .inputfield{
+.wrapper .txt_field{
   margin-bottom: 15px;
   display: flex;
   align-items: center;
 }
 
-.wrapper .form .inputfield label{
+.wrapper .txt_field label{
    width: 200px;
    color: #000000;
    margin-right: 10px;
   font-size: 14px;
 }
 
-.wrapper .form .inputfield .input,
-.wrapper .form .inputfield .textarea{
+.wrapper .txt_field .input{
   width: 100%;
   outline: none;
   border: 1px solid #c3c4c4;
@@ -57,44 +47,13 @@ body{
   background: #f0f0f0ca;
 }
 
-.wrapper .form .inputfield .textarea{
+.wrapper .txt_field .text{
   width: 100%;
   height: 125px;
   resize: none;
 }
 
-.wrapper .form .inputfield .custom_select{
-  position: relative;
-  width: 100%;
-  height: 37px;
-  opacity: 70%;
-}
-
-.wrapper .form .inputfield .custom_select:before{
-  content: "";
-  position: absolute;
-  top: 13px;
-  right: 10px;
-  border: 8px solid;
-  border-color: #393838ca transparent transparent transparent;
-  pointer-events: none;
-}
-
-.wrapper .form .inputfield .custom_select select{
-  -webkit-appearance: none;
-  -moz-appearance:   none;
-  appearance:        none;
-  outline: none;
-  width: 100%;
-  height: 100%;
-  border: 0px;
-  padding: 8px 10px;
-  font-size: 15px;
-  border: 1px solid #f0f0f0ca;
-  border-radius: 3px;
-}
-
-.wrapper .form .inputfield .btn{
+input[type="submit"]{
   width: 100%;
    padding: 8px 10px;
   font-size: 15px; 
