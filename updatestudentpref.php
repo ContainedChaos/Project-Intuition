@@ -25,8 +25,10 @@
             {
                 //print_r($row);
                 ?>
-                <div class = "center">
+                <link rel = "stylesheet" href = "updatestudentpref.css">
+                <div class = "wrapper">
                 <form method = "post" action = "updatestudentprefcode.php">
+                    <h2>UPDATE PREFERENCES</h2>
 
                     <div class="radiobutton">
                         <label class = "required">Preferred Mode</label>
@@ -39,21 +41,21 @@
                         <label>Area</label>
                         <input type = "text" name = "updateArea" class = "form-control" value = "<?php echo $row['area']; ?>">
                     </div>
-                    <div class="inputfield">
+                    <div class="txt_field">
                         <label class = "required">Subjects</label>
                         <div class="tooltip"> ?
                             <span class="tooltiptext">Subjects that you need lessons on separated by commas</span>
                         </div>
-                        <input type="text" class="input" name = "updateSubjects" required value = "<?php echo $row['subjects']; ?>">
+                        <input type="text" class="form-control" name = "updateSubjects" required value = "<?php echo $row['subjects']; ?>">
                     </div>
-                    <div class="inputfield">
+                    <div class="txt_field">
                         <label>Availability</label>
                         <div class="tooltip"> ?
                             <span class="tooltiptext">Days that you prefer for lessons separated by commas</span>
                         </div>
-                        <input type="text" class="input" name = "updateAvailability" required value = "<?php echo $row['availability']; ?>">
+                        <input type="text" class="form-control" name = "updateAvailability" required value = "<?php echo $row['availability']; ?>">
                     </div>
-                    <div class="inputfield">
+                    <div class="txt_field">
                         <label>Salary Range</label>
                         <div class="custom_select">
                             <select name = "updateSalaryrange">
