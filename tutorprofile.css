@@ -6,6 +6,7 @@
   scroll-behavior: smooth;
   list-style: none;
   text-decoration: none;
+  overflow: hidden;
 }
 :root{
   --main-color: #3e968d;
@@ -22,8 +23,9 @@
 body{
   color: var(--text-color);
   background-image: url(home_background.jpg);
-  background-size: auto;
+  background-size: contain;
   background-position: top;
+  background-
 }
 header{
   position: fixed;

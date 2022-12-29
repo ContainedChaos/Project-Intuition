@@ -44,107 +44,107 @@
     <section class="home" id="home">
     <div class = "wrapper" style="background-color:#555555; padding:30px; border-radius:20px; height: 500px; margin-top:100px;">
         
-        <div class = "name">
-          <label style = "margin-right: 99px;">Name</label>
+        <div class = "name" style ="margin-bottom: 5px;">
+          <label style = "margin-right: 99px; font-weight:bold;">Name</label>
           <label style = "margin-right: 10px;">:</label>
           <?php
             session_start();
             echo $_SESSION['name'];
           ?>
         </div>
-        <div class = "attribute">
-          <label style = "margin-right: 87px;">Gender</label>
+        <div class = "attribute" style ="margin-bottom: 5px;">
+          <label style = "margin-right: 88px; font-weight:bold;">Gender</label>
           <label style = "margin-right: 10px;">:</label>
           <?php
             echo $_SESSION['gender'];
           ?>
         </div>
-        <div class = "attribute">
-          <label style = "margin-right: 95px;">Phone</label>
+        <div class = "attribute" style ="margin-bottom: 5px;">
+          <label style = "margin-right: 97px; font-weight:bold;">Phone</label>
           <label style = "margin-right: 10px;">:</label>
           <?php
             echo $_SESSION['phone'];
           ?>
         </div>
-        <div class = "attribute">
-          <label style = "margin-right: 102px;">Email</label>
+        <div class = "attribute" style ="margin-bottom: 5px;">
+          <label style = "margin-right: 103px; font-weight:bold;">Email</label>
           <label style = "margin-right: 10px;">:</label>
           <?php
             echo $_SESSION['email'];
           ?>
         </div>
-        <div class = "attribute">
-          <label style = "margin-right: 115px;">Age</label>
+        <div class = "attribute" style ="margin-bottom: 5px;">
+          <label style = "margin-right: 116px; font-weight:bold;">Age</label>
           <label style = "margin-right: 10px;">:</label>
           <?php
             echo $_SESSION['age'];
           ?>
         </div>
-        <div class = "attribute">
-          <label style = "margin-right: 83px;">Address</label>
+        <div class = "attribute" style ="margin-bottom: 5px;">
+          <label style = "margin-right: 81px; font-weight:bold;">Address</label>
           <label style = "margin-right: 10px;">:</label>
           <?php
             echo $_SESSION['address'];
           ?>
         </div>
-        <div class = "attribute">
-          <label style = "margin-right: 70px;">Education</label>
+        <div class = "attribute" style ="margin-bottom: 5px;">
+          <label style = "margin-right: 66px; font-weight:bold;">Education</label>
           <label style = "margin-right: 10px;">:</label>
           <?php
             echo $_SESSION['education'];
           ?>
         </div>
-        <div class = "attribute">
-          <label style = "margin-right: 92px;">Version</label>
+        <div class = "attribute" style ="margin-bottom: 5px;">
+          <label style = "margin-right: 86px; font-weight:bold;">Version</label>
           <label style = "margin-right: 10px;">:</label>
           <?php
             echo $_SESSION['version'];
           ?>
         </div>
-        <div class = "attribute">
-          <label style = "margin-right: 73px;">Institution</label>
+        <div class = "attribute" style ="margin-bottom: 5px;">
+          <label style = "margin-right: 65px; font-weight:bold;">Institution</label>
           <label style = "margin-right: 10px;">:</label>
           <?php
             echo $_SESSION['institution'];
           ?>
         </div>
-        <div class = "attribute">
-          <label style = "margin-right: 34px;">Preferred Mode</label>
+        <div class = "attribute" style ="margin-bottom: 5px;">
+          <label style = "margin-right: 25px; font-weight:bold;">Preferred Mode</label>
           <label style = "margin-right: 10px;">:</label>
           <?php
             echo $_SESSION['mode'];
           ?>
         </div>
-        <div class = "attribute">
-          <label style = "margin-right: 41px;">Preferred Area</label>
+        <div class = "attribute" style ="margin-bottom: 5px;">
+          <label style = "margin-right: 32px; font-weight:bold;">Preferred Area</label>
           <label style = "margin-right: 10px;">:</label>
           <?php
             echo $_SESSION['area'];
           ?>
         </div>
-        <div class = "attribute">
-          <label style = "margin-right: 74px;">Subject(s)</label>
+        <div class = "attribute" style ="margin-bottom: 5px;">
+          <label style = "margin-right: 65px; font-weight:bold;">Subject(s)</label>
           <label style = "margin-right: 10px;">:</label>
           <?php
             echo $_SESSION['subjects'];
           ?>
         </div>
-        <div class = "attribute">
-          <label style = "margin-right: 66px;">Availability</label>
+        <div class = "attribute" style ="margin-bottom: 5px;">
+          <label style = "margin-right: 57px; font-weight:bold;">Availability</label>
           <label style = "margin-right: 10px;">:</label>
           <?php
             echo $_SESSION['availability'];
           ?>
         </div>
-        <div class = "attribute">
-          <label style = "margin-right: 113px;">Slots</label>
+        <div class = "attribute" style ="margin-bottom: 5px;">
+          <label style = "margin-right: 111px; font-weight:bold;">Slots</label>
           <label style = "margin-right: 10px;">:</label>
           <?php
             echo $_SESSION['slots'];
           ?>
         </div>
         <div class = "attribute">
-          <label style = "margin-right: 50px;">Salary Range</label>
+          <label style = "margin-right: 42px; font-weight:bold;">Salary Range</label>
           <label style = "margin-right: 10px;">:</label>
           <?php
             echo $_SESSION['salaryrange'];
