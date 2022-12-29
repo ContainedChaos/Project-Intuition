@@ -19,9 +19,10 @@
             {
                 //print_r($row);
                 ?>
-                <div class = "center">
+                <link rel = "stylesheet" href = "updatestudentprofile.css">
+                <div class = "wrapper">
                 <form method = "post" action = "updatestudentprofilecode.php">
-
+                    <h2>UPDATE PROFILE</h2>
                     <div class = "txt_field">
                         <label>Name</label>
                         <input type = "text" name = "updateName" class = "form-control" value = "<?php echo $row['name']; ?>">
