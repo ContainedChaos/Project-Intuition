@@ -88,7 +88,7 @@ section{
 }
 .btn{
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 30px;
     background: var(--main-color);
     color: #fff;
     border-radius: 0.5rem;
@@ -100,7 +100,7 @@ section{
 }
 .btn2{
     display: inline-block;
-    padding: 10px 27px;
+    padding: 10px 42px;
     background: var(--main-color);
     color: #fff;
     border-radius: 0.5rem;

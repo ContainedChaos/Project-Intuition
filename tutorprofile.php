@@ -19,21 +19,27 @@
         Project Intuition
       </title>
       <link rel = "stylesheet" href = "tutorprofile.css">
+      <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   </head>
   <body>
       <div class = "banner">
-          <div class = "navbar">
-              <ul>
-                  <li><a href="loggedintutor.php">Home</a></li>
-                  <li><a href="dashboardtutor.php">Dashboard</a></li>
-                  <li><a href="searchfilterstutor.html">Search</a></li>
-                  <li><a href="tutorprofile.php">My Profile</a></li>
-                  <li><a href="contact-us.html">Contact Us</a></li>
-              </ul>
-              <button>
-                    <a href = "homepage.html">Logout</a>
-              </button>
-          </div>
+        <header>
+          <a href="#" class="logo">InTuition</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+
+            <ul class="navbar">
+              <li><a href="#">Home</a></li>
+              <li><a href="dashboardstudent.php">Dashboard</a></li>
+              <li><a href="searchfiltersstudent.html">Find Students</a></li>
+              <li><a href="studentviewreq.php">Requests</a></li>
+              <li><a href="studentprofile.php">My Profile</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+              <li><a href="login.html">Logout</a></li>
+            </ul>
+        </header>
           <div class = "wrapper">
         
           <div class = "name">
@@ -143,10 +149,10 @@
             ?>
           </div>
           </div>
-      </div>
-      <div class="content">
+          <div class="content">
             <button type = "button"><a href = "updatetutorprofile.php"><span></span>Update Profile</a></button>
             <button type = "button"><a href = "updatetutorpref.php"><span></span>Update Preferences</a></button>
+          </div>
       </div>
   </body>
 </html>
