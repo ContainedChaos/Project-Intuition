@@ -28,7 +28,13 @@ if (isset($email) && isset($password)) {
 
 		if ($result->num_rows == 1) {
 			$row = mysqli_fetch_assoc($result);
-            if ($row['verified'] == 1 && password_verify($password, $row['password'])) {
+            if ($row['verified'] == 1 && password_verify($password, $row['password']))
+			
+			
+			
+			
+			
+			 {
 							$_SESSION['email'] = $row['email'];
             	$_SESSION['password'] = $row['password'];
 					    $_SESSION['name'] = $row['name'];
