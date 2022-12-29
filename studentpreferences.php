@@ -58,11 +58,12 @@
         </div>
        </div> 
 
-       <div class="inputfield">
-        <input type = "submit" name = "Submit" value = "Submit">
-        <button type = "button"><a href = "signup-verify.html"><span></span>Skip</a></button>
+       <div class="submitbutton">
+        <input type = "submit" name = "Submit" value = "Submit" ">
         <input type = "hidden" name = "email" value = "<?php if (isset($_GET['email'])){echo $_GET['email'];} ?>">
        </div>
+
+       <a href = "signup-verify.html"><span></span>Skip</a>
 
        <div class = "login_link2">
         Already have an account? <a href = "login.html">Login</a> 
