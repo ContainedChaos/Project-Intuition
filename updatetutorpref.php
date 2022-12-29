@@ -28,7 +28,7 @@
                 <link rel = "stylesheet" href = "updatetutorpref.css">
                 <div class = "wrapper">
                 <form method = "post" action = "updatetutorprefcode.php">
-
+                    <h2>UPDATE PREFERENCES</h2>
                     <div class="radiobutton">
                         <label class = "required">Preferred Mode</label>
                         <input type="radio" id="on" name="updateMode" value="n" required checked = "checked">
