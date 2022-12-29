@@ -1,9 +1,4 @@
 *{
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
-*{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -26,15 +21,9 @@
 }
 body{
   color: var(--text-color);
-}
-.banner{
-  width: 100%;
-  height: 100vh;
-  background-image: url(tutorprofile.jpg);
-  background-size: cover;
-  background-position: center;
-  opacity: 100%;
-  margin-bottom: 20px;
+  background-image: url(home_background.jpg);
+  background-size: auto;
+  background-position: top;
 }
 header{
   position: fixed;
@@ -59,7 +48,7 @@ header{
 .navbar a{
   color: var(--text-color);
   font-size: 1.1rem;
-  padding: 10px 15px;
+  padding: 10px 20px;
   font-weight: 500;
 }
 .navbar a:hover{
@@ -71,66 +60,52 @@ header{
   cursor: pointer;
   display: none;
 }
-.wrapper{
-  max-width: 600px;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.701);
-  margin: 5px auto;
-  padding: -100px;
-  border-radius: 15px;
-  margin-top: 117px;
+section{
+  padding: 70px 17%;
 }
-.attribute{
-  margin-bottom: 27px;
-  margin-left: 30px;
-  color: #12514be6;
-  font-weight: 600;
+.home{
+  width:120%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+  align-items: center;  
 }
-.name{
-  margin-bottom: 27px;
-  margin-top: 20px;
-  margin-left: 30px;
-  color: #12514be6;
-  font-weight: 600;
+.content{
+  margin-top: -245px;
+  margin-left: 50px;
+  max-width: 100%;
+  width: 600px;
+  height: auto;
+}
+.home-text h1{
+  font-size: var(--big-font);
+  color: var(--main-color);
+}
+.home-text h2{
+  font-size: var(--h2-font);
+  margin: 1rem 0 2rem;
 }
 button{
-  width: 90px;
-  padding: 7px 0;
-  text-align: center;
-  
-  font-weight: bold;
-  border: 2px solid #0d877b;
-  background: #0d877b;
-  color: rgb(255, 255, 255);
-  cursor: pointer;
-  position: center;
-  overflow: hidden;
-}
-span{
-  background: #0d877b;
-  height: 100%;
-  width: 0;
-  border-radius: 25px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-  transition: 0.15s;
-}
-button:hover span{
-  width: 100%;
-}
-button:hover{
-  border: 100%;
-  background-color: #46b1a6;
-  transition: 0.15s;
-}
-
-p{
-  font-size: 18px;
-}
-
-button a{
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  display: inline-block;
+  padding: 10px 30px;
+  background: var(--main-color);
+  color: #fff;
+  border-radius: 0.5rem;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  margin-left: 100px;
 }
+
+.content a{
+  text-decoration: none;
+}
+
+.menu-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  grid-gap: 1.5rem;
+  align-items: center;
+}
+
