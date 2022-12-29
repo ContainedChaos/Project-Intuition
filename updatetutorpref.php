@@ -25,7 +25,8 @@
             {
                 //print_r($row);
                 ?>
-                <div class = "center">
+                <link rel = "stylesheet" href = "updatetutorpref.css">
+                <div class = "wrapper">
                 <form method = "post" action = "updatetutorprefcode.php">
 
                     <div class="radiobutton">
