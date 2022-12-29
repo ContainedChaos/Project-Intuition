@@ -26,23 +26,23 @@
         <link rel = "stylesheet" href = "searchresults.css">
     </head>
     <body>
-        <div class = "banner">
-            <div class = "navbar">
-                <ul>
-                <li><a href="loggedintutor.php">Home</a></li>
-                  <li><a href="dashboardtutor.php">Dashboard</a></li>
-                  <li><a href="searchfilterstutor.html">Search</a></li>
-                  <li><a href="tutorprofile.php">My Profile</a></li>
-                  <li><a href="contact-us.html">Contact Us</a></li>
-                </ul>
-                <button>
-                  <a href = "homepage.html">Logout</a>
-                </button>
-            </div>
-        </div>
+    <header>
+          <a href="#" class="logo">InTuition</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+
+            <ul class="navbar">
+              <li><a href="loggedintutor.php">Home</a></li>
+              <li><a href="dashboardtutor.php">Dashboard</a></li>
+              <li><a href="findstudents.php">Find Students</a></li>
+              <li><a href="tutorviewreq.php">Requests</a></li>
+              <li><a href="tutorprofile.php">My Profile</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+              <li><a href="home.html">Logout</a></li>
+            </ul>
+        </header>
 
         <div class = "wrapper">
-        <div class = "title">
+        <div class = "searchresults">
             <h1>Search results</h1>
     </div>
         <div class = "content">

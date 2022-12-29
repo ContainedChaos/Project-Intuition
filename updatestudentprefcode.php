@@ -36,11 +36,26 @@
                 $result = mysqli_query($conn, $update);
                 //$result2 = mysqli_query($conn, $update2);
 
-                $_SESSION['mode'] = $mode;
+                
+                if($mode == "n")
+                    $_SESSION['mode'] = "Online";
+                else if($mode == "f")
+                    $_SESSION['mode'] = "Offline";
+
                 $_SESSION['area'] = $area;
                 $_SESSION['subjects'] = $subjects;
                 $_SESSION['availability'] = $availability;
-                $_SESSION['salaryrange'] = $salaryrange;
+                              
+                if($salaryrange == "threetofive")
+                    $_SESSION['salaryrange'] = "3000 to 5000";
+                else if($salaryrange == "fivetoeight")
+                    $_SESSION['salaryrange'] = "5000 to 8000";
+                else if($salaryrange == "eighttoten")
+                    $_SESSION['salaryrange'] = "8000 to 10000";
+                else if($salaryrange == "tentofifteen")
+                    $_SESSION['salaryrange'] = "10000 to 15000";
+                else if($salaryrange == "fifteentotwenty")
+                    $_SESSION['salaryrange'] = "15000 to 20000";
 
                 if ($result)
                 {

@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 body{
   background-image: url(userrole_bg.jpg);
@@ -14,6 +14,13 @@ body{
 }
 .wrapper .title{
   margin-top: 100px;
+  font-size: 20px;
+  margin-bottom: 25px;
+  color: #ffffffe6;
+  text-align: center;
+}
+.wrapper .searchresults{
+  margin-top: 150px;
   font-size: 20px;
   margin-bottom: 25px;
   color: #ffffffe6;
@@ -104,45 +111,6 @@ select[name = "salaryrange"]{
   background: #29a99ce6;
 }
 
-.navbar{
-  width: 85%;
-  margin: auto;
-  margin-bottom: -90px;
-  padding: 35px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color:rgb(255, 255, 255);
-}
-.navbar ul{
-  margin-left: 320px;
-}
-.navbar ul li{
-  list-style: none;
-  display: inline-block;
-  margin: 0 20px;
-  position: relative;
-  font-size: 16px;
-}
-.navbar ul li a{
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  text-decoration: uppercase;
-  opacity:unset;
-}
-.navbar ul li::after{
-  content: '';
-  height: 3px;
-  width: 0;
-  background: #0d877b;
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  transition: 0.5s;
-}
-.navbar ul li:hover::after{
-  width: 100%;
-}
 button{
   width: 90px;
   padding: 7px 0;
@@ -204,4 +172,67 @@ button a{
   color: #ffffffe6;
   text-align: center;
   background-color: #0d877b;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+:root{
+  --main-color: #3e968d;
+  --text-color: #fff;
+  --bg-color: #181718;
+  --big-font: 5rem;
+  --h2-font: 2.25rem;
+  --p-font: 0.9rem;
+}
+*::selection{
+  background: var(--main-color);
+  color: #fff;
+}
+body{
+  color: var(--text-color);
+  background-image: url(home_background.jpg);
+  background-size: auto;
+  background-position: top;
+}
+header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 170px;
+  background: var(--bg-color);
+}
+.logo{
+  color: var(--main-color);
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+.navbar{
+  display: flex;
+}
+.navbar a{
+  color: var(--text-color);
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+.navbar a:hover{
+  color: var(--main-color);
+  transition: .4s; 
+}
+#menu-icon{
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
 }

@@ -1,212 +1,153 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  background-image: url(userrole_bg.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 0 10px;
+}
+.wrapper .title h1{
+  margin-top: 170px;
+  color: #ffffffe6;
+  text-align: center;
+  font-size:38px;
+}
+.wrapper .content{
+  font-size: 15px;
+  color: #010e0ce6;
+  text-align: left;
+}
+.wrapper .content .info {
+  width: 700px;
+  height: 200px;
+  background: #ffffffe6;
+  margin: 15px auto;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+  padding: 20px;
+  border-radius: 30px;
+  margin-top: 40px;
 }
 
-body {
-    overflow-x: hidden;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+:root{
+  --main-color: #3e968d;
+  --text-color: #fff;
+  --bg-color: #181718;
+  --big-font: 5rem;
+  --h2-font: 2.25rem;
+  --p-font: 0.9rem;
+}
+*::selection{
+  background: var(--main-color);
+  color: #fff;
+}
+body{
+  color: var(--text-color);
+  background-image: url(home_background.jpg);
+  background-size: auto;
+  background-position: top;
+}
+header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 170px;
+  background: var(--bg-color);
+}
+.logo{
+  color: var(--main-color);
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+.navbar{
+  display: flex;
+}
+.navbar a{
+  color: var(--text-color);
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+.navbar a:hover{
+  color: var(--main-color);
+  transition: .4s; 
+}
+#menu-icon{
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+span{
+  background: #0d877b;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.15s;
+}
+.btn{
+  width: 150px;
+  padding: 7px 0;
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid #0d877b;
+  background: #0d877b;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  font-size: 15px;
+  margin-left: 500px;
+  margin-bottom: 10px;
+}
+span{
+  background: #0d877b;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.15s;
+}
+button:hover span{
+  width: 100%;
+}
+.btn:hover{
+  border: 100%;
+  background-color: #46b1a6;
+  transition: 0.15s;
 }
 
-.container {
-    position: relative;
-    width: 100%;
+p{
+  font-size: 18px;
 }
 
-.main {
-    position: absolute;
-    width: calc(100% - 300px);
-    min-height: 100vh;
-    background: #f5f5f5;
-}
-
-.user {
-    position: relative;
-    width: 50px;
-    height: 50px;
-}
-
-img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-}
-
-.cards {
-    margin-top: 60px;
-    width: 100%;
-    padding: 35px 20px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-}
-
-.cards .card {
-    background: linear-gradient(45deg, #47cebe, #ef4a82);
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-}
-
-.number {
-    font-size: 35px;
-    font-weight: 500;
-    color: #fff;
-}
-
-.card-name {
-    color: #444;
-    font-weight: 600;
-}
-
-.icon-box i {
-    font-size: 45px;
-    color: #444;
-}
-
-.tables {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 20px;
-    align-items: self-start;
-    padding: 0 20px 20px 20px;
-}
-
-.img-box-small {
-    position: relative;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.last-appointments,
-.doctor-visiting {
-    min-height: 350px;
-    background: #fff;
-    padding: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.heading {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #444;
-}
-
-.btn {
-    padding: 5px 10px;
-    background: linear-gradient(45deg, #47cebe, #ef4a82);
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
-}
-
-table {
-    margin-top: 10px;
-    width: 100%;
-    border-collapse: collapse;
-}
-
-thead td {
-    font-weight: 600;
-    color: #333;
-}
-
-table tr {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-tbody tr:hover {
-    background: #444;
-    color: #fff;
-}
-
-table tbody tr:last-child {
-    border-bottom: none;
-}
-
-td {
-    padding: 9px 5px;
-}
-
-td i {
-    padding: 7px;
-    color: #fff;
-    border-radius: 50px;
-}
-
-.last-appointments table tbody td:last-child {
-    white-space: nowrap;
-}
-
-.fa-eye {
-    background: #32bea6;
-}
-
-.fa-edit {
-    background: #63b4f4;
-}
-
-.fa-trash-alt {
-    background: #ed5564;
-}
-
-@media(max-width:1090px) {
-    .sidebar {
-        width: 60px;
-    }
-    .main {
-        width: calc(100% - 60px);
-        left: 60px;
-    }
-    .top-bar {
-        width: calc(100% - 60px);
-    }
-}
-
-@media(max-width:860px) {
-    .cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .tables {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media(max-width:530px) {
-    .cards {
-        grid-template-columns: 1fr;
-    }
-    .last-appointments td:nth-child(3) {
-        display: none;
-    }
-}
-
-@media(max-width:420px) {
-    .last-appointments,
-    .doctor-visiting {
-        font-size: 70%;
-        padding: 10px;
-        min-height: 200px;
-    }
-    .cards,
-    .tables {
-        padding: 10px;
-    }
-    .search input {
-        padding: 0 10px;
-    }
-    .user {
-        width: 40px;
-        height: 40px;
-    }
+button a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }

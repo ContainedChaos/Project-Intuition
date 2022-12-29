@@ -17,7 +17,7 @@
         $phone = $_POST['updatePhone'];
         $education = $_POST['updateEducation'];
         $version = $_POST['updateVersion'];
-    
+
         $query = "SELECT * from tutor where email = '$email'";
     
         $qres = mysqli_query($conn, $query);
@@ -34,8 +34,21 @@
                 $_SESSION['address'] = $address;
                 $_SESSION['institution'] = $institution;
                 $_SESSION['phone'] = $phone;
-                $_SESSION['education'] = $education;
-                $_SESSION['version'] = $version;
+
+                if($education == "c")
+                    $_SESSION['education'] = "College";
+                if($education == "u")
+                    $_SESSION['education'] = "Undergraduate";
+                if($education == "p")
+                    $_SESSION['education'] = "Postgraduate";
+
+                if($version == "e")
+					$_SESSION['version'] = "English Medium";
+				else if($version == "b")
+                    $_SESSION['version']= "Bangla Medium";
+                else if($version == "v")
+                    $_SESSION['version']= "English Version";
+            
 
                 if ($result)
                 {

@@ -35,7 +35,13 @@
                 $_SESSION['institution'] = $institution;
                 $_SESSION['phone'] = $phone;
                 $_SESSION['grade'] = $grade;
-                $_SESSION['version'] = $version;
+                
+                if($version == "e")
+					$_SESSION['version'] = "English Medium";
+				else if($version == "b")
+                    $_SESSION['version']= "Bangla Medium";
+                else if($version == "v")
+                    $_SESSION['version']= "English Version";
 
                 if ($result)
                 {

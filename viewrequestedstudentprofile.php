@@ -59,20 +59,23 @@
       <link rel = "stylesheet" href = "studentprofile.css">
   </head>
   <body>
-      <div class = "banner">
-          <div class = "navbar">
-              <ul>
-                  <li><a href="loggedintutor.php">Home</a></li>
-                  <li><a href="dashboardtutor.php">Dashboard</a></li>
-                  <li><a href="searchfilterstutor.html">Search</a></li>
-                  <li><a href="tutorprofile.php">My Profile</a></li>
-                  <li><a href="contact-us.html">Contact Us</a></li>
-              </ul>
-              <button>
-                    <a href = "homepage.html">Logout</a>
-              </button>
-          </div>
-          <div class = "wrapper">
+  <header>
+          <a href="#" class="logo">InTuition</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+
+            <ul class="navbar">
+              <li><a href="loggedintutor.php">Home</a></li>
+              <li><a href="dashboardtutor.php">Dashboard</a></li>
+              <li><a href="findstudents.php">Find Students</a></li>
+              <li><a href="tutorviewreq.php">Requests</a></li>
+              <li><a href="tutorprofile.php">My Profile</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+              <li><a href="home.html">Logout</a></li>
+            </ul>
+        </header>
+
+    <section class="home" id="home">
+    <div class = "wrapper" style="background-color:#555555; padding:30px; border-radius:20px; height: 500px; margin-top:100px;">
         
           <div class = "name">
             <label style = "margin-right: 99px;">Name</label>
@@ -174,7 +177,7 @@
           </div>
           </div>
           <div class ="inputfield">
-              <button type = "button" disabled>Request Sent</button>
+              <button type = "button"   style="color:#000000" disabled>Request Sent</button>
           </div>
       </div>
   </body>

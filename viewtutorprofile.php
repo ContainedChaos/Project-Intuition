@@ -69,20 +69,22 @@
       <link rel = "stylesheet" href = "tutorprofile.css">
   </head>
   <body>
-      <div class = "banner">
-          <div class = "navbar">
-              <ul>
-                  <li><a href="loggedinstudent.php">Home</a></li>
-                  <li><a href="dashboardstudent.php">Dashboard</a></li>
-                  <li><a href="searchfiltersstudent.html">Search</a></li>
-                  <li><a href="studentprofile.php">My Profile</a></li>
-                  <li><a href="contact-us.html">Contact Us</a></li>
-              </ul>
-              <button>
-                    <a href = "homepage.html">Logout</a>
-              </button>
-          </div>
-          <div class = "wrapper">
+  <header>
+          <a href="#" class="logo">InTuition</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+
+            <ul class="navbar">
+              <li><a href="loggedinstudent.php">Home</a></li>
+              <li><a href="dashboardstudent.php">Dashboard</a></li>
+              <li><a href="hireatutor.php">Hire a Tutor</a></li>
+              <li><a href="studentviewreq.php">Requests</a></li>
+              <li><a href="studentprofile.php">My Profile</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+              <li><a href="home.html">Logout</a></li>
+            </ul>
+        </header>
+        <section class="home" id="home">
+          <div class = "wrapper" style="background-color:#555555; padding:30px; border-radius:20px; height: 500px; margin-top:100px;">
         
           <div class = "name">
             <label style = "margin-right: 99px;">Name</label>
@@ -183,14 +185,10 @@
             ?>
           </div>
           </div>
-          <div class ="attribute">
-            <form action = "sendrequesttotutor.php" method = "post">
-              <input type = "submit" value = "Send Request" class = "btn" name = "sendrequest">
-              <input type = "hidden" name = "email" value = "<?php echo $email; ?>">
-            </form>
-          </div>
-          <div class = "attribute">
-            <h2>Reviews</h2>
+          
+          <div class="content">
+      <div class = "attribute" style="margin-top:10px; text-align:left;">
+            <h2 style="margin-bottom:30px;">Reviews</h2>
             <?php
             if($result2->num_rows != 0)
             {
@@ -198,6 +196,8 @@
               {
             ?>
               <label>"</label><label><?php echo $row2['review'];?></label><label>"</label><br>
+
+              <div style = "margin-top:30px;"></div>
           </div>
             <?php 
               } 
@@ -210,6 +210,13 @@
             } 
             ?>
           </div>
-      </div>
+          <div class ="attribute">
+            <form action = "sendrequesttotutor.php" method = "post">
+              <input type = "submit" value = "Send Request" class = "btn" name = "sendrequest">
+              <input type = "hidden" name = "email" value = "<?php echo $email; ?>">
+            </form>
+          </div>
+          
+          </section>
   </body>
 </html>

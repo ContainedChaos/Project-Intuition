@@ -29,22 +29,28 @@
       <title>
         Project Intuition
       </title>
-      <link rel = "stylesheet" href = "studentviewreq.css">
+      <link rel = "stylesheet" href = "dashboardstudent.css">
   </head>
   <body>
-    <div class = "wrapper">
-      <div class = "banner">
-          <div class = "navbar">
-              <ul>
-                <li><a href="loggedinstudent.php">Home</a></li>
-                <li><a href="dashboardstudent.php">Dashboard</a></li>
-                <li><a href="searchfiltersstudent.html">Search</a></li>
-                <li><a href="studentviewreq.php">Requests</a></li>
-                <li><a href="studentprofile.php">My Profile</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
-              </ul>
-          </div>
-      </div>
+   
+    <header>
+          <a href="#" class="logo">InTuition</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+
+            <ul class="navbar">
+              <li><a href="loggedinstudent.php">Home</a></li>
+              <li><a href="dashboardstudent.php">Dashboard</a></li>
+              <li><a href="hireatutor.php">Hire a Tutor</a></li>
+              <li><a href="studentviewreq.php">Requests</a></li>
+              <li><a href="studentprofile.php">My Profile</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+              <li><a href="home.html">Logout</a></li>
+            </ul>
+        </header>
+        <div class = "wrapper">
+        <div class = "title">
+            <h1>Your tutors</h1>
+       </div>
       <div class="content">
         <?php
         if ($resultfirst)
@@ -89,6 +95,9 @@
             <label id = "subjects" style="font-weight:bold;">Subject(s)</label> <label style="margin-left:13px; margin-right:4px; font-weight:bold;">:</label> <label><?php echo $tutorinfo2['subjects'];?></label><br>
             <label id = "email" style="font-weight:bold;">Email</label> <label style="margin-left:47px; margin-right:4px; font-weight:bold;">:</label> <label><?php echo $tutorinfo2['email'];?></label><br>
 
+            <form action = "writereview.php?email=<?php echo $tutormail1;?>" method = "post">
+                <input type = "submit" value = "Write a Review" class = "btn" name = "accept">
+            </form>
             <?php
           }
         }

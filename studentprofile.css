@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
 *{
   padding: 0;
   margin: 0;
@@ -109,5 +110,18 @@ button{
   grid-template-columns: repeat(auto-fit, minmax(220px, auto));
   grid-gap: 1.5rem;
   align-items: center;
+}
+
+.attribute .btn{  
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 30px;
+    background: rgb(244, 240, 240);
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    border-radius: 0.5rem;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-left: 100px;
 }
 
