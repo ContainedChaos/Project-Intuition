@@ -70,6 +70,7 @@
             <label id = "availability" style="font-weight:bold;">Availability</label> <label style="margin-left:5px; margin-right:4px; font-weight:bold;">:</label> <label><?php echo $studinfo1['availability'];?></label><br>
             <label id = "subjects" style="font-weight:bold;">Subject(s)</label> <label style="margin-left:13px; margin-right:4px; font-weight:bold;">:</label> <label><?php echo $studinfo1['subjects'];?></label><br>
             <label id = "email" style="font-weight:bold;">Email</label> <label style="margin-left:47px; margin-right:4px; font-weight:bold;">:</label> <label><?php echo $studinfo1['email'];?></label><br>
+          </div>
             <?php
           }
         }
@@ -91,10 +92,38 @@
             <label id = "availability" style="font-weight:bold;">Availability</label> <label style="margin-left:5px; margin-right:4px; font-weight:bold;">:</label> <label><?php echo $studinfo2['availability'];?></label><br>
             <label id = "subjects" style="font-weight:bold;">Subject(s)</label> <label style="margin-left:13px; margin-right:4px; font-weight:bold;">:</label> <label><?php echo $studinfo2['subjects'];?></label><br>
             <label id = "email" style="font-weight:bold;">Email</label> <label style="margin-left:47px; margin-right:4px; font-weight:bold;">:</label> <label><?php echo $studinfo2['email'];?></label><br>
+          </div>
             <?php
           }
         }
         ?>
+
+<div class = "info">
+<label id = "review" style="margin-left:230px;font-weight:bold;color:#000000;font-size:30px;">Your Reviews</label><br>
+
+
+      <?php
+        $retrievereq = "SELECT * FROM reviews WHERE tutor = '$email'";
+        $queryinfo = mysqli_query($conn, $retrievereq);
+
+        if($queryinfo->num_rows != 0)
+        {        
+            while ($reviewinfo = mysqli_fetch_array($queryinfo))
+            {
+              ?>
+              <div class = "review">
+                   <label style="color:#000000;;font-size:20px;">" <?php echo $reviewinfo['review'];?>"</label><br>
+              <?php
+            }
+        }
+        else
+        {
+            ?>
+             <label style="color:#000000;;font-size:20px;"> <?php echo "No reviews to show.";?></label><br>
+            <?php
+        }
+        ?>
+        </div>
       </div>
         </div>
   </body>
